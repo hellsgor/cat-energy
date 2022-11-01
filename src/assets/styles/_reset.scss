@@ -1,0 +1,70 @@
+/* Изменения алгоритма расчёта ширины и высоты элементов */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* Обнуление списков */
+ul,
+ol {
+  padding: 0;
+  list-style: none;
+}
+
+/* Обнуление margin */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Обнуление заголовков */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/* Наследование шрифтов у формы */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Отключение подчеркивания у ссылок*/
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Обнуление кнопок */
+button {
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+}

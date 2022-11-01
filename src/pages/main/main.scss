@@ -1,0 +1,19 @@
+@import 'Layouts/main-layout.scss';
+
+body {
+  color: white;
+}
+.hello-block {
+  &__image {
+    display: flex;
+    justify-content: center;
+    margin: 80px 0 40px;
+    img {
+      width: 200px;
+      height: 200px;
+    }
+  }
+  &__title {
+    text-align: center;
+  }
+}
