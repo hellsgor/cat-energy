@@ -2,7 +2,7 @@
 
 ## Клонирование репозитория
 
-    
+    git@github.com:hellsgor/cat-energy.git
 
 ## Версионность
 
