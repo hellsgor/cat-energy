@@ -1,0 +1,11 @@
+@mixin shadow_normal {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16);
+}
+
+@mixin shadow_hover {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.19);
+}
+
+@mixin shadow_pressed {
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
