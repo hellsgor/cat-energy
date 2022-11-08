@@ -1,0 +1,11 @@
+section.first-screen
+    .first-screen__offer
+      .first-screen__content
+        h1 Функциональное питание для котов
+        h6 Занялся собой? Займись котом!
+        include UIKit/green-button/green-button.pug
+        +green-button('подобрать программу')
+    .first-screen__background
+      img(src=require('Img/index-background.png') alt='altText')
+    .first-screen__product
+      img(src=require('Img/index-product.png') alt='Product')

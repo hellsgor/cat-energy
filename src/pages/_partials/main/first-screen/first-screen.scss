@@ -1,0 +1,38 @@
+.first-screen {
+  display: flex;
+  justify-content: space-between;
+
+  &__offer {
+    position: relative;
+    width: 50vw;
+    display: flex;
+    align-items: center;
+  }
+
+  &__content {
+    max-width: 414px;
+    width: 100%;
+    margin-left: 190px;
+
+    h6{
+      margin-top: 40px;
+      margin-bottom: 52px;
+    }
+  }
+
+  &__background {
+    width: 50vw;
+    height: 100%;
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__product {
+    position: absolute;
+    top: 20%;
+    left: 40.5%;
+    z-index: 100;
+  }
+}
