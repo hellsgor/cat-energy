@@ -5,3 +5,14 @@
 @import 'Styles/_mixins.scss';
 @import 'Styles/_indents.scss';
 
+.container {
+  width: 100%;
+  max-width: 1440px;
+  padding: 0 110px;
+  margin: 0 auto;
+
+  @media (max-width: $mobile) {
+    padding: 0 20px;
+  }
+}
+

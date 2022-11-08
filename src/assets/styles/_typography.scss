@@ -16,7 +16,6 @@ h6 {
   font-family: 'Oswald', sans-serif;
   font-style: normal;
   font-weight: 400;
-  text-transform: uppercase;
 }
 
 h1,
@@ -33,6 +32,7 @@ h2 {
 h3 {
   font-size: 36px;
   line-height: 100%;
+  text-transform: uppercase;
 
   @media (max-width: $mobile) {
     font-size: 24px;
@@ -63,6 +63,7 @@ h5 {
 h6 {
   font-size: 20px;
   line-height: 100%;
+  text-transform: uppercase;
 
   @media (max-width: $mobile) {
     font-size: 14px;

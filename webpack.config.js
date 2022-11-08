@@ -1,4 +1,5 @@
-const path = require('path');
+import path from "path";
+
 const webpack = require('webpack');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
@@ -9,6 +10,7 @@ const isDev = process.env.NODE_ENV === 'development';
 module.exports = {
   entry: {
     index: './src/pages/main/main.pug',
+    uiKit: './src/pages/ui-kit/ui-kit.pug',
   },
   output: {
     filename: 'assets/js/[name].js',
@@ -45,7 +47,7 @@ module.exports = {
       Fonts: path.join(__dirname, './src/assets/fonts/'),
       Components: path.join(__dirname, './src/components/'),
       Layouts: path.join(__dirname, './src/layouts/'),
-      UIKit: path.join(__dirname, './src/ui-kit/'),
+      UIKit: path.join(__dirname, './src/UIKit'),
       Styles: path.join(__dirname, './src/assets/styles/'),
       Libs: path.join(__dirname, './src/libs/'),
       NodeModules: path.join(__dirname, './node_modules/'),
