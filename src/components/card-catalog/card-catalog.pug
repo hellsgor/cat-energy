@@ -1,0 +1,8 @@
+mixin card-catalog(fileName, title, text, btnText)
+  .card-catalog
+    .card-catalog__title-row
+      .card-catalog__icon
+        img(src=require(`Img/` + fileName))
+      h3.card-catalog__title #{title}
+    p.card-catalog__text #{text}
+    .card-catalog__btn
