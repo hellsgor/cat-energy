@@ -1,0 +1,33 @@
+@import 'Components/how-it-work-card/how-it-work-card.scss';
+
+.how-it-work {
+  &__inner {
+    margin-top: 72px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+
+    @media (max-width: $tablet) {
+      justify-content: flex-start;
+      row-gap: 134px;
+      column-gap: 182px;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: $mobile) {
+      row-gap: 20px;
+      margin-top: 38px;
+    }
+  }
+
+  @media (max-width: $tablet) {
+    padding-bottom: 104px;
+    border-bottom: 1px solid $section-border;
+  }
+
+  @media (max-width: $mobile) {
+    border-bottom: unset;
+    padding-bottom: 16px;
+  }
+}
