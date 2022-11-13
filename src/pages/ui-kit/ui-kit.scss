@@ -1,8 +1,14 @@
 @import 'Layouts/layout-without-common/layout-without-common.scss';
 
 @import 'UIKit/green-button/green-button.scss';
+@import 'UIKit/arrow-btn/arrow-btn.scss';
 
 .buttons-container {
   margin-top: 30px;
   height: auto;
+}
+
+h2 {
+  margin-top: 32px;
+  margin-bottom: 8px;
 }

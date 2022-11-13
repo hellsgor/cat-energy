@@ -1,0 +1,126 @@
+@import 'UIKit/arrow-btn/arrow-btn.scss';
+
+.card-catalog {
+  padding: 40px 52px 52px;
+  background-color: $background-color;
+  width: 100%;
+  min-width: 570px;
+
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: $tablet) {
+    padding: 54px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 36px;
+    min-width: 100%;
+  }
+  @media (max-width: $mobile) {
+    padding: 20px;
+  }
+
+  &__left-column {
+    display: flex;
+    flex-direction: column;
+    @media (max-width: $tablet) {
+      .card-catalog__icon-inner {
+        display: none;
+      }
+    }
+    @media (max-width: $mobile) {
+      .card-catalog__icon-inner {
+        display: block;
+      }
+    }
+  }
+
+  &__right-column {
+    display: none;
+    @media(max-width: $tablet) {
+      display: block;
+    }
+    @media(max-width: $mobile) {
+      display: none;
+    }
+  }
+
+  &__title-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+
+    @media (max-width: $tablet) {
+      margin-bottom: 24px;
+    }
+    @media (max-width: $mobile) {
+      margin-bottom: 22px;
+    }
+  }
+
+  &__icon-inner {
+    position: relative;
+    &:before {
+      content: '';
+      display: block;
+      height: 100px;
+      width: 100px;
+      background-color: $green;
+      border-radius: 100px;
+
+      @media (max-width: $tablet) {
+        height: 200px;
+        width: 200px;
+      }
+
+      @media (max-width: $mobile) {
+        height: 50px;
+        width: 50px;
+      }
+    }
+  }
+  &__icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @media (max-width: $tablet) {
+      img {
+        transform: scale(2);
+      }
+    }
+
+    @media (max-width: $mobile) {
+      img {
+        transform: scale(0.5);
+      }
+    }
+  }
+  &__title {
+    margin-left: 60px;
+
+    @media (max-width: $tablet) {
+      margin-left: 0;
+    }
+
+    @media (max-width: $mobile) {
+      margin-left: 20px;
+    }
+  }
+  &__text {
+    margin-bottom: 24px;
+
+    @media (max-width: $tablet) {
+      margin-bottom: 52px;
+    }
+
+    @media (max-width: $mobile) {
+      padding-bottom: 24px;
+      border-bottom: 1px solid $grey-border;
+      margin-bottom: 16px;
+      color: $grey-button-text;
+    }
+  }
+}

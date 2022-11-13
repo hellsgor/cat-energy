@@ -5,6 +5,11 @@ body {
   color: $black;
   font-size: 16px;
   line-height: 150%;
+
+  @media (max-width: $mobile) {
+    font-size: 14px;
+    line-height: 129%;
+  }
 }
 
 h1,
