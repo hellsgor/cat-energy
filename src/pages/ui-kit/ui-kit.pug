@@ -14,5 +14,12 @@ block content
     include UIKit/green-button/green-button.pug
     +green-button('подобрать программу')
 
+    hr
+
+    h2 Arrow button
+    include UIKit/arrow-btn/arrow-btn.pug
+    +arrow-btn('button text', '#', 'in-kit')
+    hr
+
 block scripts
   script(src=require('./ui-kit.js') defer)
