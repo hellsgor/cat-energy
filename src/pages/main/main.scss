@@ -1,2 +1,5 @@
-@import 'Layouts/main-layout.scss';
+@import 'Layouts/main-layout/main-layout.scss';
 
+@import 'Partials/main/first-screen/first-screen.scss';
+@import 'UIKit/green-button/green-button.scss';
+@import 'Partials/main/to-catalog/to-catalog.scss';

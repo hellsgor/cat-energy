@@ -1,0 +1,56 @@
+.arrow-btn {
+  padding: 4px 0;
+  display: flex;
+  align-items: center;
+  column-gap: 24px;
+  width: fit-content;
+
+  @media (max-width: $mobile) {
+    column-gap: 16px;
+  }
+
+  &__text {
+    font-family: 'Oswald', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 98%;
+    text-transform: uppercase;
+
+    @media (max-width: $mobile) {
+      font-size: 16px;
+    }
+  }
+
+  svg {
+    line {
+      transform: translateX(-8px);
+    }
+    path {
+      transform: translateX(-8px);
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@media (hover: hover) {
+  .arrow-btn {
+    &:hover {
+      svg {
+        line {
+          transform: translateX(0);
+          @include transition;
+        }
+
+        path {
+          transform: translateX(0);
+          @include transition;
+        }
+      }
+    }
+  }
+}
+

@@ -1,4 +1,4 @@
-extends Layouts/main-layout.pug
+extends Layouts/main-layout/main-layout.pug
 
 block variables
   - var title = 'Main page'
@@ -7,6 +7,9 @@ block styles
   link(href=require('./main.scss') rel='stylesheet')
 block content
   main.page__main
-    h1 Hello
+
+    include Partials/main/first-screen/first-screen.pug
+    include Partials/main/to-catalog/to-catalog.pug
+
 block scripts
   script(src=require('./main.js') defer)

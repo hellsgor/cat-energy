@@ -1,0 +1,18 @@
+@import 'Components/card-catalog/card-catalog.scss';
+
+.to-catalog {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 80px;
+
+    @media (max-width: $tablet) {
+      flex-direction: column;
+      row-gap: 30px;
+    }
+
+    @media (max-width: $mobile) {
+      row-gap: 20px;
+    }
+  }
+}

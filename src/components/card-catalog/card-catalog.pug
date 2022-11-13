@@ -1,0 +1,15 @@
+mixin card-catalog(fileName, title, text, btnText)
+  .card-catalog
+    .card-catalog__left-column
+      .card-catalog__title-row
+        .card-catalog__icon-inner
+          .card-catalog__icon
+            img(src=require(`Img/icons/` + fileName))
+        h3.card-catalog__title #{title}
+      p.card-catalog__text #{text}
+      include UIKit/arrow-btn/arrow-btn.pug
+      +arrow-btn(btnText, '#')
+    .card-catalog__right-column
+      .card-catalog__icon-inner
+        .card-catalog__icon
+          img(src=require(`Img/icons/` + fileName))
