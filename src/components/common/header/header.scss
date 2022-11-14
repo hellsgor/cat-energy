@@ -1,0 +1,11 @@
+@import './main-menu/main-menu.scss';
+
+.header {
+  &__inner {
+    margin-top: 52px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  &__logo {}
+}

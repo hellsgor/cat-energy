@@ -1,0 +1,36 @@
+.main-menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  column-gap: 36px;
+  margin-bottom: 2px;
+  &__item {
+    font-family: 'Oswald', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: uppercase;
+    padding-bottom: 8px;
+    border-bottom: 2px solid transparent;
+
+    &_white {
+      color: $white;
+      border-bottom-color: $white;
+    }
+
+    &_active {
+      border-bottom-color: $green;
+    }
+  }
+}
+
+@media (hover: hover) {
+  .main-menu__item:hover {
+    opacity: 0.6;
+  }
+}
+
+.main-menu__item:active {
+  opacity: 0.3;
+}
