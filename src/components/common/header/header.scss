@@ -1,23 +1,32 @@
 @import './main-menu/main-menu.scss';
 
 .header {
-  position: absolute;
-  top: 0;
+  position: fixed;
+  transform: translateY(150px);
+  top: -150px;
   z-index: 10000;
   width: 100%;
   height: 130px;
-  display: flex;
-  align-items: center;
+  transition: transform ease-in-out 0.3s;
 
-  &_with-bg {
-    background-color: $white;
+  &_hidden {
+    transform: translateY(-150px);
+    transition: transform ease-in-out 0.3s;
   }
 
-  &_fixed {
-    position: fixed;
-    top: -150px;
-    transform: translateY(150px);
-    transition: transform ease-in-out 0.3s;
+  &__background {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: $white;
+    opacity: 1;
+    @include transition;
+
+    &_hidden {
+      opacity: 0;
+      @include transition;
+    }
   }
 
   &__inner {
