@@ -1,8 +1,26 @@
 @import './main-menu/main-menu.scss';
 
 .header {
+  position: absolute;
+  top: 0;
+  z-index: 10000;
+  width: 100%;
+  height: 130px;
+  display: flex;
+  align-items: center;
+
+  &_with-bg {
+    background-color: $white;
+  }
+
+  &_fixed {
+    position: fixed;
+    top: -150px;
+    transform: translateY(150px);
+    transition: transform ease-in-out 0.3s;
+  }
+
   &__inner {
-    margin-top: 52px;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;

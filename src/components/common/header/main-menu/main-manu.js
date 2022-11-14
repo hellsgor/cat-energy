@@ -1,9 +1,12 @@
-import { mediaQueryTablet } from 'Utils/variables.js';
-const url = window.location.pathname
-const menuItemS = document.querySelectorAll('.header .main-menu__item');
+import { currentUrl } from 'Utils/variables.js';
+import { menuItemS } from 'Utils/variables.js';
 
-if ((url === '/') && (!mediaQueryTablet.matches)) {
-  for (let menuItem of menuItemS) {
+for (let menuItem of menuItemS) {
+  const active = menuItem.href.replace(/^.*?:\/\/.*?(?=\/|$)/,'');
+  if (currentUrl === active) {
+    menuItem.classList.add('main-menu__item_active');
+  }
+  if (currentUrl !== '/') {} else {
     menuItem.classList.add('main-menu__item_white');
   }
 }
