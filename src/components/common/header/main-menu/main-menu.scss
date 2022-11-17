@@ -4,6 +4,7 @@
   align-items: center;
   column-gap: 36px;
   margin-bottom: 2px;
+
   &__item {
     font-family: 'Oswald', sans-serif;
     font-style: normal;
@@ -13,15 +14,39 @@
     text-transform: uppercase;
     padding-bottom: 8px;
     color: $black;
+    border-bottom: 2px solid transparent;
 
-    &_active {
-      border-bottom: 2px solid $green;
+    &_active-green-border {
+      border-bottom-color: $green;
     }
 
     &_white {
       color: $white;
+    }
+
+    &_active-white-border {
       border-bottom-color: $white;
     }
+
+    @media(max-width: $tablet) {
+      font-size: 20px;
+      line-height: 30px;
+    }
+
+    @media(max-width: $mobile) {
+      font-size: 28px;
+      line-height: 100%;
+    }
+  }
+
+  @media(max-width: $tablet) {
+    column-gap: 32px;
+  }
+
+  @media(max-width: $mobile) {
+    flex-direction: column;
+    row-gap: 68px;
+    margin-bottom: unset;
   }
 }
 

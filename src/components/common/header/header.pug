@@ -1,7 +1,13 @@
 .header
-  .header__background
-    .container
-      .header__inner
-        a.header__logo(href='/')
-          include Img/logo.pug
-        include ./main-menu/main-menu.pug
+  .container
+    .header__desktop-tablet
+      a.header__logo(href='/')
+        include Img/logo.pug
+      include ./main-menu/main-menu.pug
+    .header__mobile
+      a.header__logo-icon(href='/')
+        include Img/logo-icon.pug
+      a.header__logo-text(href='/')
+        include Img/logo-text-mobile.pug
+      .header__burger-btn
+        include Img/icons/burger.pug

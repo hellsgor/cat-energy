@@ -42,12 +42,12 @@
       svg {
         line {
           transform: translateX(0);
-          @include transition;
+          @include transition(transform);
         }
 
         path {
           transform: translateX(0);
-          @include transition;
+          @include transition(transform);
         }
       }
     }
