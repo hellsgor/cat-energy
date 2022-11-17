@@ -1,0 +1,148 @@
+.footer {
+
+  width: 100%;
+  background-color: $grey-button;
+  padding: 59px 0 56px 0;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (max-width: $mobile) {
+      flex-direction: column;
+    }
+  }
+
+  &__logo {
+    width: 100%;
+    max-width: 128px;
+    svg {
+      path {
+        fill: $footer-black;
+      }
+    }
+
+    @media(hover: hover) {
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+
+    @media (max-width: $mobile) {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__social {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    column-gap: 32px;
+
+    @media (max-width: $mobile) {
+      width: 100%;
+      padding: 22px 0;
+      border-top: solid 1px $grey-border;
+      border-bottom: solid 1px $grey-border;
+    }
+  }
+
+  &__s-icon {
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    svg {
+      path {
+        fill: $grey-dark;
+      }
+    }
+    &:last-child {
+      svg{
+        path {
+          fill: none;
+          stroke: $grey-dark;
+        }
+      }
+    }
+
+    @media (hover: hover) {
+      &:hover {
+        svg {
+          path {
+            fill: $green;
+          }
+        }
+      }
+      &:last-child:hover {
+        svg{
+          path {
+            fill: none;
+            stroke: $green;
+          }
+        }
+      }
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  &__academy-text {
+    color: $grey-button-text;
+    @media (max-width: $mobile) {
+      font-size: 16px;
+      line-height: 150%;
+    }
+  }
+
+  &__academy-logo {
+    svg {
+      path{
+        fill: $grey-dark;
+      }
+    }
+  }
+
+  &__copyright {
+    display: flex;
+    column-gap: 22px;
+
+    @media(hover: hover) {
+      &:hover {
+        .footer__academy-logo {
+          svg {
+            path {
+              fill: $green;
+            }
+          }
+        }
+      }
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+
+    @media (max-width: $mobile) {
+      width: 100%;
+      justify-content: space-between;
+      margin-top: 22px;
+    }
+  }
+
+  @media (max-width: $tablet) {
+    padding: 62px 0 54px 0;
+  }
+
+  @media (max-width: $mobile) {
+    padding: 40px 0 22px 0;
+  }
+}
