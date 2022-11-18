@@ -1,0 +1,39 @@
+.range {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  column-gap: 24px;
+
+  &__description {
+    font-family: 'Oswald', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: $black;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+
+    padding-bottom: 2px;
+    border-bottom: 1px dotted $grey-light;
+
+    @media (max-width: $mobile) {
+      font-size: 16px;
+      line-height: 20px;
+      padding-bottom: unset;
+      border-bottom: unset;
+    }
+
+    @media (hover: hover) {
+      &:hover {
+        border-bottom-color: $grey-dark;
+      }
+
+    }
+  }
+
+  @media (max-width: $mobile) {
+    column-gap: 18px;
+  }
+}

@@ -1,0 +1,5 @@
+mixin range(min='0', max='100', value='50', step='1', leftText='', rightText='')
+  .range
+    span.range__description.range__description_left #{leftText}
+    input.range__slider(type='range' min=min max=max value=value step=step)
+    span.range__description.range__description_right #{rightText}
