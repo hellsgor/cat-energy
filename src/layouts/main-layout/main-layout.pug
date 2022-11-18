@@ -6,11 +6,13 @@ html(lang='ru' class='page')
     meta(charset='utf-8')
     meta(name='viewport' content='width=device-width, initial-scale=1')
     link(rel="icon" href="assets/img/favicon/favicon.ico" type="image/ico")
+    script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAyWyf_KfLa1_jG98nTMYOu8HtFrqp5s9o" defer)
     title #{title}
     block styles
   body(class='page__body')
     include Components/common/header/header.pug
     include Components/common/header/burger-menu/burger-menu.pug
     block content
-    include Components/common/footer/footer.pug
+
+    include ../../components/common/footer-big/footer-big
     block scripts

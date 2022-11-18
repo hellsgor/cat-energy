@@ -18,7 +18,6 @@ let currentScroll = 0;
 
 // прозрачный хедер на главной странице выше adjustingHeaderScrollY
 if (currentUrl === '/' && currentScroll < adjustingHeaderScrollY && !mediaQueryTablet.matches) {
-  console.log('fail')
   headerTransparent();
   highlightActiveMenuItem();
 }
