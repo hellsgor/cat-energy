@@ -1,0 +1,51 @@
+@import 'UIKit/input-range/input-range.scss';
+
+.was-became {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__images-container {
+    position: relative;
+    height: 1px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    @media (max-width: $mobile) {
+    }
+  }
+
+  &__images {
+    height: 536px;
+    width: 417px;
+    bottom: 0;
+    position: absolute;
+
+    img {
+      @media (max-width: $mobile) {
+        width: 280px;
+      }
+
+    }
+
+    @media (max-width: $mobile) {
+      width: 100%;
+      height: fit-content;
+    }
+  }
+
+  &__became {}
+
+  &__was {
+    position: absolute;
+    z-index: 20;
+    width: 50%;
+    overflow-x: hidden;
+  }
+
+  .range {
+    width: 100%;
+  }
+}

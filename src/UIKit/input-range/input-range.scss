@@ -1,10 +1,12 @@
 .range {
+  margin-top: 19px;
   width: 100%;
   display: flex;
+  justify-content: center;
   align-items: center;
   column-gap: 24px;
 
-  &__description {
+  &__button {
     font-family: 'Oswald', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -23,15 +25,13 @@
     @media (max-width: $mobile) {
       font-size: 16px;
       line-height: 20px;
-      padding-bottom: unset;
-      border-bottom: unset;
       cursor: default;
     }
 
     @media (hover: hover) {
       &:hover {
         border-bottom-color: $grey-dark;
-
+        border-bottom-style: solid;
       }
     }
   }
@@ -45,14 +45,17 @@
     width: 100%; /* Specific width is required for Firefox. */
     background: transparent; /* Otherwise white in Chrome */
 
+    @media(max-width: $mobile) {
+      display: none;
+    }
   }
 
   input[type=range]::-webkit-slider-thumb {
     -webkit-appearance: none;
     width: 34px;
     height: 34px;
-    background: rgb(104,183,56);
-    background: radial-gradient(circle, rgba(104,183,56,1) 0%, rgba(104,183,56,1) 25%, rgba(255,255,255,1) 25%, rgba(255,255,255,1) 100%);
+    background: rgb(104, 183, 56);
+    background: radial-gradient(circle, rgba(104, 183, 56, 1) 0%, rgba(104, 183, 56, 1) 25%, rgba(255, 255, 255, 1) 25%, rgba(255, 255, 255, 1) 100%);
     border: 1px solid $input-range-thumb-border;
     border-radius: 100%;
     cursor: pointer;
@@ -87,8 +90,47 @@
     align-items: center;
     border-radius: 6px;
     cursor: pointer;
+
+    &:hover {
+      input[type=range]::-webkit-slider-thumb {
+        @include shadow_hover;
+      }
+    }
   }
 
+  .toggle {
+    display: none;
+
+    @media (max-width: $mobile) {
+      display: block;
+      width: 84px;
+      height: 14px;
+      border-radius: 7px;
+      background-color: $white;
+      border: 1px solid $input-range-thumb-border;
+      padding: 4px;
+
+      &__line {
+        width: 35px;
+        height: 100%;
+        background-color: $green;
+        border-radius: 6px;
+        margin: 0 20px;
+
+        &_right {
+          margin-left: 40px;
+          margin-right: 0;
+          @include transition(all);
+        }
+
+        &_left {
+          margin-right: 40px;
+          margin-left: 0;
+          @include transition(all);
+        }
+      }
+    }
+  }
 }
 
 

@@ -1,5 +1,7 @@
 mixin range(min='0', max='100', value='50', step='1', leftText='', rightText='')
   .range
-    span.range__description.range__description_left #{leftText}
+    span.range__button.range__button_left #{leftText}
     input.range__slider(type='range' min=min max=max value=value step=step)
-    span.range__description.range__description_right #{rightText}
+    .toggle
+      .toggle__line
+    span.range__button.range__button_right #{rightText}
