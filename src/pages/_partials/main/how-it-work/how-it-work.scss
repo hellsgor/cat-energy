@@ -1,6 +1,8 @@
 @import 'Components/how-it-work-card/how-it-work-card.scss';
 
 .how-it-work {
+  margin-bottom: 160px;
+
   &__inner {
     margin-top: 72px;
     display: flex;
@@ -24,10 +26,13 @@
   @media (max-width: $tablet) {
     padding-bottom: 104px;
     border-bottom: 1px solid $section-border;
+    margin-bottom: 44px;
   }
 
   @media (max-width: $mobile) {
     border-bottom: unset;
-    padding-bottom: 16px;
+    padding-bottom: 0;
+    margin-bottom: 42px;
+
   }
 }
