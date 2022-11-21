@@ -1,0 +1,43 @@
+.advantage-card {
+  position: relative;
+  &__title {
+    height: 72px;
+    width: 162px;
+    border-radius: 3px;
+    border: 1px solid $input-range-thumb-border;
+    text-align: center;
+    line-height: 72px;
+    margin-bottom: 5px;
+
+    @media (max-width: $mobile) {
+      height: 56px;
+      width: 124px;
+      line-height: 55px;
+    }
+  }
+  &__text {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 14px;
+    line-height: 14px;
+    white-space: nowrap;
+    color: $grey-button-text;
+    background-color: $background-color;
+    padding: 0 9px;
+
+    @media (max-width: $tablet) {
+      background-color: $white;
+    }
+
+    @media (max-width: $mobile) {
+      font-size: 12px;
+      line-height: 12px;
+      white-space: normal;
+      background-color: $background-color;
+      bottom: -10px;
+    }
+  }
+}

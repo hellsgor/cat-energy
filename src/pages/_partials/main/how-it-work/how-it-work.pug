@@ -1,0 +1,9 @@
+section.how-it-work
+  .container
+    h2.how-it-work__title Как это работает
+    .how-it-work__inner
+      include Components/how-it-work-card/how-it-work-card.pug
+      +how-it-work-card('Функциональное питание содержит только полезные питательные вещества.', '1', 'leaf.svg')
+      +how-it-work-card('Выпускается в виде порошка, который нужно лишь залить кипятком и готово.', '2', 'tub.svg')
+      +how-it-work-card('Замените один-два приема обычной еды на наше функциональное питание.', '3', 'eat.svg')
+      +how-it-work-card('Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!', '4', 'alarm.svg')

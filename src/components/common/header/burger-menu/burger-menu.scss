@@ -1,0 +1,50 @@
+.burger-menu {
+  display: none;
+
+  &__close-btn {
+    svg {
+      path{
+        stroke: $black;
+      }
+    }
+    &:active {
+      svg {
+        path {
+          stroke: $grey-button-pressed-text;
+        }
+      }
+    }
+    @media(max-width: $mobile) {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+
+      svg {
+        width: 24px;
+        height: 22px;
+      }
+    }
+  }
+
+  @media(max-width: $mobile) {
+    position: fixed;
+    top: 0;
+    right: -600px;
+    width: 100%;
+    height: 100%;
+    z-index: $z-index-header;
+    background-color: $white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include transition(right);
+  }
+
+  &_visible {
+    @media(max-width: $mobile) {
+      z-index: $z-index-burger-menu;
+      right: 0;
+      @include transition(right);
+    }
+  }
+}

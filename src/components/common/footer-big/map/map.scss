@@ -1,0 +1,69 @@
+.map {
+  position: relative;
+
+  &__invite {
+    width: 570px;
+    padding: 60px 76px 60px;
+
+    background-color: $white;
+
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 50;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media(max-width: $tablet) {
+      width: 100%;
+      padding: 60px 0;
+      position: unset;
+      top: unset;
+      transform: translateY(0);
+    }
+
+    @media(max-width: $mobile) {
+      padding: 28px 0 22px;
+      flex-direction: column;
+      row-gap: 16px;
+    }
+  }
+
+  &__title {
+    max-width: 163px;
+    line-height: 134%;
+
+    @media(max-width: $mobile) {
+      text-align: center;
+    }
+  }
+
+  &__address {
+    color: $grey-button-text;
+    max-width: 155px;
+    line-height: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+
+    @media(max-width: $tablet) {
+      text-align: right;
+    }
+
+    @media (max-width: $mobile) {
+      text-align: center;
+      row-gap: 0;
+    }
+  }
+
+  &__map-inner {
+    width: 100%;
+    height: 400px;
+
+    @media (max-width: $mobile) {
+      height: 362px;
+    }
+  }
+}

@@ -10,7 +10,6 @@
   }
 
   @media (max-width: $mobile) {
-    padding: 20px;
     margin-bottom: 24px;
   }
 
@@ -53,7 +52,7 @@
         color: $white;
         text-align: center;
         margin-top: 25px;
-        margin-bottom: 302px;
+        margin-bottom: 300px;
       }
     }
 
@@ -101,10 +100,10 @@
 
   &__product {
     position: absolute;
-    top: 20%;
+    top: 30%;
     left: 40.5%;
-    width: 552px;
-    height: 499px;
+    width: 700px;
+    height: auto;
 
     img {
       height: 100%;
@@ -124,7 +123,7 @@
     @media (max-width: $mobile) {
       width: 100%;
       height: unset;
-      top: 183px;
+      top: 165px;
     }
   }
 }

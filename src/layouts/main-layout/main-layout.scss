@@ -1,1 +1,16 @@
 @import 'Styles/styles.scss';
+@import 'Components/common/header/header.scss';
+@import 'Components/common/header/burger-menu/burger-menu.scss';
+@import 'Components/common/footer-big/footer-big.scss';
+
+.page {
+  &__body {
+    @media(max-width: $mobile) {
+    }
+  }
+  &__main {
+    @media(max-width: $mobile) {
+      padding-top: 66px;
+    }
+  }
+}

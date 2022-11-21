@@ -1,0 +1,123 @@
+@import 'Components/advantage-card/advantage-card.scss';
+@import 'Components/was-became/was-became.scss';
+
+.live-example {
+  margin-bottom: 0;
+  h2 {
+    margin-bottom: 76px;
+    margin-block-start: 0;
+
+    @media (max-width: $tablet) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__background {
+    padding: 70px 0 70px;
+    background-color: $background-color;
+
+    @media (max-width: $tablet) {
+      background-color: $white;
+      padding: 63px 0 280px;
+    }
+
+    @media (max-width: $mobile) {
+      background-color: $background-color;
+      padding: 32px 0 400px;
+    }
+  }
+
+  &__background-for-was-became {
+    @media(max-width: $tablet) {
+      background-color: $background-color;
+    }
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    @media (max-width: $tablet) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__top-part {
+    margin-bottom: 69px;
+    color: $grey-button-text;
+    max-width: 436px;
+    width: 100%;
+
+    @media (max-width: $tablet) {
+      max-width: 100%;
+    }
+
+    @media (max-width: $mobile) {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__advantage-cards {
+    display: flex;
+    column-gap: 42px;
+  }
+
+  &__expenses {
+    display: flex;
+    column-gap: 63px;
+    margin-top: 60px;
+
+    @media(max-width: $tablet) {
+      flex-direction: column;
+      text-align: right;
+      margin-top: 0;
+    }
+
+    @media(max-width: $mobile) {
+      flex-direction: row;
+      margin-top: 34px;
+      column-gap: 8px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__bottom-part {
+    @media(max-width: $tablet) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    @media(max-width: $mobile) {
+      flex-direction: column;
+    }
+  }
+
+  &__was-became {
+    width: 100%;
+    max-width: 576px;
+
+    @media (max-width: $tablet) {
+      padding-top: 361px;
+      padding-bottom: 67px;
+      margin: 0 auto;
+    }
+
+    @media (max-width: $mobile) {
+      max-width: 280px;
+      padding-top: 0;
+      padding-bottom: 32px;
+    }
+  }
+  @media (max-width: $mobile) {
+    padding-top: 27px;
+    background-color: $background-color;
+    //margin-bottom: 0;
+  }
+}

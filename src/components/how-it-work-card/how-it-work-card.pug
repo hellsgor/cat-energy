@@ -1,0 +1,7 @@
+mixin how-it-work-card(description, number, icon_path)
+  .how-it-work-card
+    .how-it-work-card__icon-bg
+      img(src=require('Img/icons/how-it-work-card-icons/' + icon_path))
+    p.how-it-work-card__description #{description}
+    span.how-it-work-card__number #{number}
+

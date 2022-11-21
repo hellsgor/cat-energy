@@ -7,6 +7,8 @@ $green-light: #8EC36D;
 $grey-dark: #666666;
 $grey-light: #B3B3B3;
 $background-color: #F2F2F2;
+$section-border: #E6E6E6;
+$footer-black: #111111;
 
 //grey-button-colors:
 $grey-button: #F2F2F2;
@@ -18,6 +20,9 @@ $grey-button-pressed-text: #B9B9B9;
 
 $grey-border: #D9D9D9;
 
+$input-range-thumb-border: #CDCDCD;
+$input-range-track-color: #DCDCDC;
+
 
 //input:
 $grey-input-border-static: #E7E7E7;
@@ -26,3 +31,7 @@ $input-error: #FF8282;
 //breakpoints:
 $tablet: 1440px;
 $mobile: 540px;
+
+//z-index:
+$z-index-header: 9900;
+$z-index-burger-menu: 10000;

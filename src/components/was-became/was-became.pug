@@ -1,0 +1,9 @@
+.was-became
+  .was-became__images-container
+    .was-became__images
+      .was-became__was
+        img(src=(require('Img/was-became/cat-norm-color.png')))
+      .was-became__became
+        img(src=(require('Img/was-became/cat-colorless.png')))
+  include UIKit/input-range/input-range.pug
+  +range(0, 100, 50, 1, 'было', 'стало', 'was-became')
