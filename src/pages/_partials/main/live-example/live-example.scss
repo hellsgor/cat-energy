@@ -1,0 +1,33 @@
+@import 'Components/advantage-card/advantage-card.scss';
+
+.live-example {
+  padding: 70px 0 70px;
+  background-color: $background-color;
+
+  &__inner {
+    display: flex;
+  }
+
+  &__top-part {
+    margin-bottom: 69px;
+    color: $grey-button-text;
+    max-width: 436px;
+    width: 100%;
+  }
+
+  &__advantage-cards {
+    display: flex;
+    column-gap: 42px;
+  }
+
+  &__expenses {
+    display: flex;
+    column-gap: 63px;
+    margin-top: 60px;
+  }
+
+  &__left-column {
+    display: flex;
+    flex-direction: column;
+  }
+}
