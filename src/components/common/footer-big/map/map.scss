@@ -3,7 +3,7 @@
 
   &__invite {
     width: 570px;
-    padding: 66px 76px 51px;
+    padding: 60px 76px 60px;
 
     background-color: $white;
 
@@ -23,11 +23,21 @@
       top: unset;
       transform: translateY(0);
     }
+
+    @media(max-width: $mobile) {
+      padding: 28px 0 22px;
+      flex-direction: column;
+      row-gap: 16px;
+    }
   }
 
   &__title {
     max-width: 163px;
     line-height: 134%;
+
+    @media(max-width: $mobile) {
+      text-align: center;
+    }
   }
 
   &__address {
@@ -40,6 +50,11 @@
 
     @media(max-width: $tablet) {
       text-align: right;
+    }
+
+    @media (max-width: $mobile) {
+      text-align: center;
+      row-gap: 0;
     }
   }
 

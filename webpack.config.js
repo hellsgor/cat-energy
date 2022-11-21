@@ -69,6 +69,10 @@ module.exports = {
           from: path.resolve(__dirname, 'src/assets/img/favicon/favicon.ico'),
           to: path.resolve(__dirname, 'dist/assets/img/favicon/')
         },
+        {
+          from: path.resolve(__dirname, 'src/assets/img/map-marker.png'),
+          to: path.resolve(__dirname, 'dist/assets/img/')
+        },
       ]
     }),
     new webpack.HotModuleReplacementPlugin(),
