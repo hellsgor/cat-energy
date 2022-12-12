@@ -31,7 +31,7 @@ function initMap() {
   resizeElements();
 
   const markerImage = {
-    url: 'assets/img/map-marker.png',
+    url: 'assets/images/map-marker.png',
     scaledSize: iconSize,
   };
 

@@ -1,12 +1,14 @@
 extends Layouts/main-layout/main-layout.pug
 
 block variables
-  - var title = 'Main page'
+  - let title = 'Main page';
+  - let withHeaderFooter = true;
+  - let pageClassName = 'main-page';
 
 block styles
   link(href=require('./main.scss') rel='stylesheet')
 block content
-  main.page__main
+  main.page__main(class=pageClassName)
 
     include Partials/main/first-screen/first-screen.pug
     include Partials/main/to-catalog/to-catalog.pug
