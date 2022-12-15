@@ -11,15 +11,7 @@ block styles
   link(href=require('./catalog.scss') rel='stylesheet')
 block content
   main.page__main(class=pageClassName)
-    div(class=pageClassName + '__inner')
-      .container
-        h1(class=pageClassName + '__title') Каталог продукции
-        div(class=pageClassName + '__goods' id='goods')
-
-          include Components/good-card/good-card.pug
-          +good-card
-
-          include Components/show-more-goods/show-more-goods.pug
-
+        include Partials/catalog/goods/goods.pug
+        include Partials/catalog/additional-goods/additional-goods.pug
 block scripts
   script(src=require('./catalog.js') defer)

@@ -1,0 +1,9 @@
+.goods
+  .container
+    h1.goods__title Каталог продукции
+    .goods__goods(id='goods')
+
+      include Components/good-card/good-card.pug
+      +good-card
+
+      include Components/show-more-goods/show-more-goods.pug

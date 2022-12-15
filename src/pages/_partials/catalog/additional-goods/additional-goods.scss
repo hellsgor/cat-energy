@@ -1,0 +1,16 @@
+.additional-goods {
+  position: relative;
+  border-top: 2px solid $green;
+
+  h3 {
+
+    &:before {
+      content: '';
+      display: block;
+      width: 413px;
+      height: 2px;
+      top: 0;
+      left: 0;
+    }
+  }
+}
