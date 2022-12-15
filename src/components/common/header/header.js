@@ -26,7 +26,7 @@ if (currentUrl === '/' && currentScroll < adjustingHeaderScrollY && !mediaQueryT
 window.addEventListener('scroll', () => {
   currentScroll = window.pageYOffset || document.body.scrollTop;
 
-  if (!mediaQueryTablet.matches) {
+  if (!mediaQueryTablet.matches && currentUrl === '/') {
     if (currentScroll > adjustingHeaderScrollY + 180) {
       for (let menuItem of menuItemS) {
         menuItem.classList.remove('main-menu__item_white');

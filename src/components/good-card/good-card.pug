@@ -1,0 +1,17 @@
+mixin good-card
+  template(id='good-card-template')
+    .good-card
+      .good-card__image
+        img
+
+      h5.good-card__title -
+
+      .good-card__properties
+        template(id='good-card-property-template')
+          .good-card__property
+            .good-card__property-name -
+            .good-card__property-value -
+
+      .good-card__add-to-order-button
+        include ../../UIKit/button/button
+        +button('заказать')

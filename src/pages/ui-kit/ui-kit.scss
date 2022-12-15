@@ -1,12 +1,18 @@
 @import 'Layouts/main-layout/main-layout.scss';
 
-@import 'UIKit/green-button/green-button.scss';
+@import 'UIKit/button/button.scss';
 @import 'UIKit/arrow-btn/arrow-btn.scss';
 @import 'UIKit/input-range/input-range.scss';
 
 .buttons-container {
   margin-top: 30px;
   height: auto;
+}
+
+.buttons {
+  display: flex;
+  column-gap: 30px;
+  flex-wrap: wrap;
 }
 
 h2 {

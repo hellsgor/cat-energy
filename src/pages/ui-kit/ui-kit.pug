@@ -12,9 +12,11 @@ block content
   .container
     h1 UI-Kit
 
-    h2 Green button
-    include UIKit/green-button/green-button.pug
-    +green-button('подобрать программу')
+    h2 Buttons
+    .buttons
+      include UIKit/button/button
+      +button('подобрать программу')
+      +button('button_secondary', 'button_secondary')
 
     hr
 

@@ -1,0 +1,184 @@
+[
+  {
+    "name": "Cat Energy PRO 500 г",
+    "properties": {
+      "масса": 500,
+      "вкус": "Курица",
+      "цена": 700
+    },
+    "image": "catalog-1-desktop 1.png",
+    "id": 1
+  },
+  {
+    "name": "Cat Energy PRO 1000 г",
+    "properties": {
+      "масса": 1000,
+      "вкус": "Курица",
+      "цена": 1000
+    },
+    "image": "catalog-2-desktop 1.png",
+    "id": 2
+  },
+  {
+    "name": "Cat Energy PRO 500 г",
+    "properties": {
+      "масса": 500,
+      "вкус": "Рыба",
+      "цена": 700
+    },
+  "image": "catalog-3-desktop.png",
+    "id": 3
+  },
+  {
+    "name": "Cat Energy PRO 1000 г",
+    "properties": {
+      "масса": 1000,
+      "вкус": "Рыба",
+      "цена": 1000
+    },
+    "image": "catalog-4-desktop 1.png",
+    "id": 4
+  },
+  {
+    "name": "Cat Energy slim 500 г",
+    "properties": {
+      "масса": 500,
+      "вкус": "Гречка",
+      "цена": 400
+    },
+    "image": "catalog-5-desktop.png",
+    "id": 5
+  },
+  {
+    "name": "Cat Energy slim 1000 г",
+    "properties": {
+      "масса": 1000,
+      "вкус": "Гречка",
+      "цена": 700
+    },
+    "image": "catalog-6-desktop.png",
+    "id": 6
+  },
+  {
+    "name": "Cat Energy slim 500 г",
+    "properties": {
+      "масса": 500,
+      "вкус": "Рис",
+      "цена": 500
+    },
+    "image": "catalog-7-desktop.png",
+    "id": 7
+  },
+  {
+    "name": "Cat Energy PRO 500 г",
+    "properties": {
+      "масса": 500,
+      "вкус": "Курица",
+      "цена": 700
+    },
+    "image": "catalog-1-desktop 1.png",
+    "id": 1
+  },
+  {
+    "name": "Cat Energy PRO 1000 г",
+    "properties": {
+      "масса": 1000,
+      "вкус": "Курица",
+      "цена": 1000
+    },
+    "image": "catalog-2-desktop 1.png",
+    "id": 2
+  },
+
+
+  {
+    "name": "Cat Energy PRO 500 г",
+    "properties": {
+      "масса": 500,
+      "вкус": "Курица",
+      "цена": 700
+    },
+    "image": "catalog-1-desktop 1.png",
+    "id": 1
+  },
+  {
+    "name": "Cat Energy PRO 1000 г",
+    "properties": {
+      "масса": 1000,
+      "вкус": "Курица",
+      "цена": 1000
+    },
+    "image": "catalog-2-desktop 1.png",
+    "id": 2
+  },
+  {
+    "name": "Cat Energy PRO 500 г",
+    "properties": {
+      "масса": 500,
+      "вкус": "Рыба",
+      "цена": 700
+    },
+    "image": "catalog-3-desktop.png",
+    "id": 3
+  },
+  {
+    "name": "Cat Energy PRO 1000 г",
+    "properties": {
+      "масса": 1000,
+      "вкус": "Рыба",
+      "цена": 1000
+    },
+    "image": "catalog-4-desktop 1.png",
+    "id": 4
+  },
+  {
+    "name": "Cat Energy slim 500 г",
+    "properties": {
+      "масса": 500,
+      "вкус": "Гречка",
+      "цена": 400
+    },
+    "image": "catalog-5-desktop.png",
+    "id": 5
+  },
+  {
+    "name": "Cat Energy slim 1000 г",
+    "properties": {
+      "масса": 1000,
+      "вкус": "Гречка",
+      "цена": 700
+    },
+    "image": "catalog-6-desktop.png",
+    "id": 6
+  },
+  {
+    "name": "Cat Energy slim 500 г",
+    "properties": {
+      "масса": 500,
+      "вкус": "Рис",
+      "цена": 500
+    },
+    "image": "catalog-7-desktop.png",
+    "id": 7
+  },
+  {
+    "name": "Cat Energy PRO 500 г",
+    "properties": {
+      "масса": 500,
+      "вкус": "Курица",
+      "цена": 700
+    },
+    "image": "catalog-1-desktop 1.png",
+    "id": 1
+  },
+  {
+    "name": "Cat Energy PRO 1000 г",
+    "properties": {
+      "масса": 1000,
+      "вкус": "Курица",
+      "цена": 1000
+    },
+    "image": "catalog-2-desktop 1.png",
+    "id": 2
+  }
+]

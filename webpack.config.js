@@ -9,6 +9,7 @@ module.exports = {
   entry: {
     index: './src/pages/main/main.pug',
     uiKit: './src/pages/ui-kit/ui-kit.pug',
+    catalog: 'src/pages/catalog/catalog.pug',
   },
   output: {
     filename: 'assets/js/[name].js',
@@ -55,6 +56,7 @@ module.exports = {
       NodeModules: path.join(__dirname, './node_modules/'),
       Partials: path.join(__dirname, './src/pages/_partials/'),
       Utils: path.join(__dirname, './src/utils/'),
+      JSON: path.join(__dirname, './src/assets/json'),
     },
   },
   plugins: [
