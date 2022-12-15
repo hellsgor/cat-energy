@@ -14,11 +14,13 @@
     margin: 46px 0 85px;
 
     @media (max-width: $mobile) {
-      margin-bottom: 41px;
+      padding-bottom: 40px;
       padding-top: 27px;
       margin-top: 0;
+      margin-bottom: 1px;
       padding-left: 20px;
       border-top: 1px solid $grey-button-hover;
+      border-bottom: 1px solid $grey-button-hover;
     }
   }
 
