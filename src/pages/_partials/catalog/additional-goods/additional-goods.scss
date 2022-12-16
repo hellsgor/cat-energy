@@ -1,3 +1,4 @@
+@import 'Components/additional-good-card/additional-good-card.scss';
 @import 'Components/gift/gift.scss';
 
 .additional-goods {
@@ -47,10 +48,24 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    column-gap: 80px;
 
     @media (max-width: $tablet) {
       flex-direction: column;
       align-items: center;
+    }
+  }
+
+  &__goods-container {
+    width: 100%;
+    height: 100%;
+
+    @media (max-width: $tablet) {
+      margin-bottom: 69px;
+    }
+
+    @media (max-width: $mobile) {
+      margin-bottom: 40px;
     }
   }
 }
