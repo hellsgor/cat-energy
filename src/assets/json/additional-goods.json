@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Сахарозаменитель",
+    "amount": 1,
+    "units": "упаковка",
+    "weight": 100,
+    "weight-units": "г",
+    "price": 200
+  },
+  {
+    "name": "Питьевая вода",
+    "amount": 5,
+    "units": "литр",
+    "price": 50
+  },
+  {
+    "name": "молоко",
+    "amount": 1,
+    "units": "литр",
+    "price": 100
+  },
+  {
+    "name": "витамины",
+    "amount": 1,
+    "units": "упаковка",
+    "weight": 30,
+    "weight-units": "г",
+    "price": 300
+  }
+]

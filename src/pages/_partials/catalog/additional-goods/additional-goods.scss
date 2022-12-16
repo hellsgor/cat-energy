@@ -59,6 +59,7 @@
   &__goods-container {
     width: 100%;
     height: 100%;
+    border-top: 1px solid $input-range-thumb-border;
 
     @media (max-width: $tablet) {
       margin-bottom: 69px;

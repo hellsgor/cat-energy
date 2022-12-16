@@ -1,11 +1,11 @@
-//template(id='additional-good-card')
-.additional-good-card
-  .additional-good-card__about-good
-    h6.additional-good-card__name Сахарозаменитель
-    p.additional-good-card__units 1 упаковка
-      span.additional-good-card__weight &nbsp;(100 г)
-    p.additional-good-card__price 100 ₽
-  .additional-good-card__button-add-to-order
-    include UIKit/button/button.pug
-    +button('заказать')
-
+template(id='additional-good-card-template')
+  .additional-good-card
+    .additional-good-card__about-good
+      h6.additional-good-card__name
+      p.additional-good-card__units
+          span.additional-good-card__amount
+          span.additional-good-card__weight
+      p.additional-good-card__price -
+    .additional-good-card__button-add-to-order
+      include UIKit/button/button.pug
+      +button('заказать')
