@@ -5,6 +5,9 @@
 @import 'Partials/catalog/additional-goods/additional-goods.scss';
 
 .catalog {
-
   padding-top: 123px;
+
+  @media (max-width: $mobile) {
+    padding-top: 0;
+  }
 }
