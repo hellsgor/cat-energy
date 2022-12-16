@@ -21,7 +21,6 @@
 
   &__goods {
     margin-top: 165px;
-    margin-bottom: 75px;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -32,11 +31,13 @@
     @media (max-width: $tablet) {
       column-gap: 60px;
       row-gap: 140px;
+      margin-bottom: 90px;
     }
 
     @media (max-width: $mobile) {
       row-gap: unset;
       margin-top: 0;
+      margin-bottom: 45px;
     }
   }
   @media (max-width: $mobile) {

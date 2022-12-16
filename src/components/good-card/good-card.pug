@@ -1,7 +1,8 @@
 mixin good-card
   template(id='good-card-template')
     .good-card
-      .good-card__image
+      picture.good-card__image
+        source
         img
 
       h5.good-card__title -
@@ -13,5 +14,5 @@ mixin good-card
             .good-card__property-value -
 
       .good-card__add-to-order-button
-        include ../../UIKit/button/button
+        include UIKit/button/button.pug
         +button('заказать')

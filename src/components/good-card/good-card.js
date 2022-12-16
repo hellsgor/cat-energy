@@ -2,7 +2,8 @@ import {insertElement} from "Utils/insert-element";
 
 export function fillGoodCard(card, counter, goodsArray, cardPropertyTemplate) {
   card.querySelector('.good-card__title').innerText = goodsArray[counter]['name'];
-  card.querySelector('.good-card__image img').src = require('Img/goods/' + goodsArray[counter]['image']);
+  card.querySelector('.good-card__image img').src = 'assets/images/goods/' + goodsArray[counter]['image'];
+  card.querySelector('.good-card__image source').srcset = 'assets/images/goods/' + goodsArray[counter]['image-x2'] + ' 2x,' + ' assets/images/goods/' + goodsArray[counter]['image'];
   card.querySelector('.good-card__image img').alt = goodsArray[counter]['name'];
 
   let cardPropertiesContainer = card.querySelector('.good-card__properties');

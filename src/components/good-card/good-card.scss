@@ -36,9 +36,8 @@ $prop-row-gap-desktop: 8px;
     top: -80px;
 
     img {
-      object-fit: none;
-      width: 172px;
-      height: 202px;
+      width: 100%;
+      height: auto;
     }
 
     @media (max-width: $mobile) {
@@ -49,9 +48,7 @@ $prop-row-gap-desktop: 8px;
       top: 24px;
 
       img {
-        object-fit: contain;
         width: 84px;
-        height: 101px;
       }
     }
   }
