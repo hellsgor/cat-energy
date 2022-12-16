@@ -6,7 +6,8 @@
       "вкус": "Курица",
       "цена": 700
     },
-    "image": "catalog-1-desktop 1.png",
+    "image": "good-1.png",
+    "image-x2": "good-1-x2.png",
     "id": 1
   },
   {
@@ -16,7 +17,8 @@
       "вкус": "Курица",
       "цена": 1000
     },
-    "image": "catalog-2-desktop 1.png",
+    "image": "good-2.png",
+    "image-x2": "good-2-x2.png",
     "id": 2
   },
   {
@@ -26,7 +28,8 @@
       "вкус": "Рыба",
       "цена": 700
     },
-  "image": "catalog-3-desktop.png",
+  "image": "good-3.png",
+  "image-x2": "good-3-x2.png",
     "id": 3
   },
   {
@@ -36,7 +39,8 @@
       "вкус": "Рыба",
       "цена": 1000
     },
-    "image": "catalog-4-desktop 1.png",
+    "image": "good-4.png",
+    "image-x2": "good-4-x2.png",
     "id": 4
   },
   {
@@ -46,7 +50,8 @@
       "вкус": "Гречка",
       "цена": 400
     },
-    "image": "catalog-5-desktop.png",
+    "image": "good-5.png",
+    "image-x2": "good-5-x2.png",
     "id": 5
   },
   {
@@ -56,7 +61,8 @@
       "вкус": "Гречка",
       "цена": 700
     },
-    "image": "catalog-6-desktop.png",
+    "image": "good-6.png",
+    "image-x2": "good-6-x2.png",
     "id": 6
   },
   {
@@ -66,7 +72,8 @@
       "вкус": "Рис",
       "цена": 500
     },
-    "image": "catalog-7-desktop.png",
+    "image": "good-7.png",
+    "image-x2": "good-7-x2.png",
     "id": 7
   },
   {
@@ -76,7 +83,8 @@
       "вкус": "Курица",
       "цена": 700
     },
-    "image": "catalog-1-desktop 1.png",
+    "image": "good-1.png",
+    "image-x2": "good-1-x2.png",
     "id": 1
   },
   {
@@ -86,7 +94,8 @@
       "вкус": "Курица",
       "цена": 1000
     },
-    "image": "catalog-2-desktop 1.png",
+    "image": "good-2.png",
+    "image-x2": "good-2-x2.png",
     "id": 2
   },
 
@@ -98,7 +107,8 @@
       "вкус": "Курица",
       "цена": 700
     },
-    "image": "catalog-1-desktop 1.png",
+    "image": "good-1.png",
+    "image-x2": "good-1-x2.png",
     "id": 1
   },
   {
@@ -108,7 +118,8 @@
       "вкус": "Курица",
       "цена": 1000
     },
-    "image": "catalog-2-desktop 1.png",
+    "image": "good-2.png",
+    "image-x2": "good-2-x2.png",
     "id": 2
   },
   {
@@ -118,7 +129,8 @@
       "вкус": "Рыба",
       "цена": 700
     },
-    "image": "catalog-3-desktop.png",
+    "image": "good-3.png",
+    "image-x2": "good-3-x2.png",
     "id": 3
   },
   {
@@ -128,7 +140,8 @@
       "вкус": "Рыба",
       "цена": 1000
     },
-    "image": "catalog-4-desktop 1.png",
+    "image": "good-4.png",
+    "image-x2": "good-4-x2.png",
     "id": 4
   },
   {
@@ -138,7 +151,8 @@
       "вкус": "Гречка",
       "цена": 400
     },
-    "image": "catalog-5-desktop.png",
+    "image": "good-5.png",
+    "image-x2": "good-5-x2.png",
     "id": 5
   },
   {
@@ -148,7 +162,8 @@
       "вкус": "Гречка",
       "цена": 700
     },
-    "image": "catalog-6-desktop.png",
+    "image": "good-6.png",
+    "image-x2": "good-6-x2.png",
     "id": 6
   },
   {
@@ -158,7 +173,8 @@
       "вкус": "Рис",
       "цена": 500
     },
-    "image": "catalog-7-desktop.png",
+    "image": "good-7.png",
+    "image-x2": "good-7-x2.png",
     "id": 7
   },
   {
@@ -168,7 +184,8 @@
       "вкус": "Курица",
       "цена": 700
     },
-    "image": "catalog-1-desktop 1.png",
+    "image": "good-1.png",
+    "image-x2": "good-1-x2.png",
     "id": 1
   },
   {
@@ -178,7 +195,8 @@
       "вкус": "Курица",
       "цена": 1000
     },
-    "image": "catalog-2-desktop 1.png",
+    "image": "good-2.png",
+    "image-x2": "good-2-x2.png",
     "id": 2
   }
 ]
