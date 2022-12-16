@@ -56,6 +56,7 @@ module.exports = {
       NodeModules: path.join(__dirname, './node_modules/'),
       Partials: path.join(__dirname, './src/pages/_partials/'),
       Utils: path.join(__dirname, './src/utils/'),
+      Mixins: path.join(__dirname, './src/mixins/'),
       JSON: path.join(__dirname, './src/assets/json'),
     },
   },
@@ -80,6 +81,14 @@ module.exports = {
         {
           from: path.resolve(__dirname, 'src/assets/images/map-marker.png'),
           to: path.resolve(__dirname, 'build/assets/images/'),
+        },
+        {
+          from: path.resolve(__dirname, 'src/assets/images/gift'),
+          to: path.resolve(__dirname, 'build/assets/images/gift'),
+        },
+        {
+          from: path.resolve(__dirname, 'src/assets/images/goods'),
+          to: path.resolve(__dirname, 'build/assets/images/goods'),
         },
       ],
     }),
