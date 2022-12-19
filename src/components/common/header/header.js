@@ -3,7 +3,8 @@
 import './main-menu/main-manu.js';
 import './burger-menu/burger-menu.js';
 
-
+import {mediaQueryTablet} from 'Utils/variables.js';
+import {currentUrl} from 'Utils/variables.js'
 import {adjustingHeaderScrollY} from 'Utils/variables.js';
 import {header} from 'Utils/variables.js';
 import {menuItemS} from 'Utils/variables.js';
