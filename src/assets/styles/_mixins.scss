@@ -13,3 +13,11 @@
 @mixin transition($property) {
   transition: $property 0.3s ease-in-out;
 }
+
+@mixin blackout {
+  width: 100%;
+  height: 100%;
+  background-color: $black;
+  opacity: 0.6;
+  cursor: pointer;
+}

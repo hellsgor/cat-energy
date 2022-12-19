@@ -1,11 +1,10 @@
 import {cloneElement} from 'Utils/clone-element';
-import {fillGoodCard} from 'Components/good-card/good-card.js';
-import {animGoodCard} from 'Components/good-card/good-card.js';
+import {animGoodCard, fillGoodCard} from 'Components/good-card/good-card.js';
 import {insertElement} from 'Utils/insert-element';
-import {fillShowMoreCard} from 'Components/show-more-goods/show-more-goods.js';
-import {hideShowMoreCard} from 'Components/show-more-goods/show-more-goods.js';
+import {fillShowMoreCard, hideShowMoreCard} from 'Components/show-more-goods/show-more-goods.js';
 
 import goods from 'JSON/goods.json';
+// const URL = 'JSON/goods.json';
 
 const goodCardTemplate = document.getElementById('good-card-template').content;
 const goodCardPropertyTemplate = goodCardTemplate.getElementById('good-card-property-template').content;
@@ -16,6 +15,8 @@ const showMoreButton = document.querySelector('.show-more-goods__show-more-butto
 let shownGoodsCounter = 0;
 let timeout = 0;
 let step = 7;
+
+// const goods = getGoods().then(() => {});
 
 if(goods.length < step) {
   step = goods.length;
@@ -50,3 +51,11 @@ function showGoods() {
   fillShowMoreCard(showMoreGoodsCard, goods, shownGoodsCounter, 'товар');
   timeout = 0;
 }
+
+// async function getGoods() {
+//   const response = await fetch(URL, {
+//     method: 'GET',
+//   });
+//   console.log(response);
+//   return response.json();
+// }

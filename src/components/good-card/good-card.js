@@ -1,4 +1,5 @@
 import {insertElement} from "Utils/insert-element";
+import {addListenerForOrder} from 'Utils/add-listener-for-order.js';
 
 export function fillGoodCard(card, counter, goodsArray, cardPropertyTemplate) {
   card.querySelector('.good-card__title').innerText = goodsArray[counter]['name'];
@@ -27,6 +28,8 @@ export function fillGoodCard(card, counter, goodsArray, cardPropertyTemplate) {
     let cardProperty = cardPropertyTemplate.cloneNode(true);
     cardProperty.querySelector('.good-card__property-name').innerText = properties[k];
     cardProperty.querySelector('.good-card__property-value').innerText = goodsArray[counter]['properties'][properties[k]] + postfix;
+
+    addListenerForOrder(card, '.good-card__add-to-order-button');
 
     insertElement(cardProperty, cardPropertiesContainer);
   }
