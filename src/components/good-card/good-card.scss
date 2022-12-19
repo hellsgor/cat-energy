@@ -1,0 +1,133 @@
+@import 'UIKit/button/button.scss';
+
+$prop-row-gap-desktop: 8px;
+
+.good-card {
+  background-color: $background-color;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-width: 245px;
+  width: 100%;
+  padding: 162px 40px 40px;
+  transform: scale(0);
+  opacity: 0;
+
+  @media (max-width: $tablet) {
+    max-width: 324px;
+  }
+
+  @media (max-width: $mobile) {
+    max-width: unset;
+    padding: 19px 20px 25px;
+    background-color: $white;
+    border-bottom: 1px solid $grey-button-hover;
+  }
+
+  &__image {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 172px;
+    height: 202px;
+    top: -80px;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    @media (max-width: $mobile) {
+      width: 50%;
+      height: 101px;
+      transform: unset;
+      left: 0;
+      top: 24px;
+
+      img {
+        width: 84px;
+      }
+    }
+  }
+
+  &__title {
+    text-align: center;
+    max-width: 145px;
+    width: 100%;
+    align-self: center;
+
+    @media(max-width: $mobile) {
+      max-width: 76px;
+      text-align: left;
+      align-self: flex-start;
+      margin-left: 50%;
+    }
+  }
+
+  &__properties {
+    display: flex;
+    flex-direction: column;
+    color: $grey-button-text;
+    row-gap: $prop-row-gap-desktop;
+    margin-top: 21px;
+
+    @media (max-width: $mobile) {
+      max-width: 50%;
+      margin-left: 50%;
+      row-gap: 0;
+      margin-top: 14px;
+    }
+  }
+
+  &__property {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    line-height: 100%;
+    border-bottom: 1px solid $input-range-thumb-border;
+    padding-bottom: $prop-row-gap-desktop;
+
+    @media (max-width: $mobile) {
+      border-bottom: unset;
+      line-height: 133%;
+      padding-bottom: unset;
+    }
+  }
+
+  &__property-name {
+    text-transform: capitalize;
+  }
+
+  &__add-to-order-button {
+    margin-top: 33px;
+    .button {
+      width: 100%;
+      padding: 10px;
+      .button__text {
+        font-size: 16px;
+      }
+    }
+
+    @media (max-width: $mobile) {
+      margin-top: 22px;
+    }
+  }
+}
+
+.good-card_animation {
+  animation-name: good-card-appearance;
+  animation-duration: 300ms;
+  animation-delay: 200ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes good-card-appearance {
+  to {
+    transform: scale(1);
+    opacity: 100%;
+  }
+}

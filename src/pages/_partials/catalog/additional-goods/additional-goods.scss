@@ -1,0 +1,72 @@
+@import 'Components/additional-good-card/additional-good-card.scss';
+@import 'Components/gift/gift.scss';
+
+.additional-goods {
+  border-top: 2px solid $green;
+
+  h3 {
+    position: relative;
+    z-index: 10;
+    margin-top: -24px;
+    margin-bottom: 80px;
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 413px;
+      height: 30px;
+      top: 50%;
+      left: -40px;
+      transform: translateY(-50%);
+      background-color: $white;
+      z-index: -1;
+
+      @media (max-width: $tablet) {
+        left: 0;
+        width: 411px;
+      }
+
+      @media (max-width: $mobile) {
+        width: 267px;
+        left: -20px;
+      }
+    }
+
+    @media (max-width: $tablet) {
+      padding-left: 37px;
+    }
+
+    @media (max-width: $mobile) {
+      padding-left: 0;
+      line-height: 100%;
+      margin-top: -19px;
+      margin-bottom: 35px;
+    }
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    column-gap: 80px;
+
+    @media (max-width: $tablet) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__goods-container {
+    width: 100%;
+    height: 100%;
+    border-top: 1px solid $input-range-thumb-border;
+
+    @media (max-width: $tablet) {
+      margin-bottom: 69px;
+    }
+
+    @media (max-width: $mobile) {
+      margin-bottom: 40px;
+    }
+  }
+}

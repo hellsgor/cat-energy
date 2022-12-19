@@ -1,4 +1,4 @@
-.green-button {
+.button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -25,17 +25,34 @@
     }
   }
 
+  &_secondary {
+    background-color: $background-color;
+    .button__text {
+      color: $grey-button-text;
+    }
+    &:active {
+      background-color: $grey-button-hover;
+      .button__text {
+        opacity: 0.3;
+      }
+    }
+  }
+
   &:active {
     background-color: $green-hover;
     .green-button__text {
       opacity: 0.3;
     }
   }
-
 }
 
 @media (hover: hover) {
-  .green-button:hover {
+
+  .button:hover {
     background-color: $green-hover;
+  }
+
+  .button_secondary:hover {
+    background-color: $grey-button-hover;
   }
 }

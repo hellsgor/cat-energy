@@ -1,0 +1,9 @@
+aside.gift
+
+  include Mixins/picture-full/picture-full.pug
+  +picture('gift', 'assets/images/gift/', 'gift-photo-', '.png', 'Фоновая картинка с котиком')
+
+  .gift__inner
+    .gift__icon
+      include Icons/gift.pug
+    p.gift__text Закажите все и получите чехол для кота в подарок!

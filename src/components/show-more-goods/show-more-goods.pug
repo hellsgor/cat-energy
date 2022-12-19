@@ -1,0 +1,11 @@
+.show-more-goods(id='show-more-goods-template')
+  .show-more-goods__icon
+  h5.show-more-goods__title
+    .show-more-goods__title-first-row Показать&nbsp;еще&nbsp;
+    .show-more-goods__title-second-row
+      span.show-more-goods__number-of-goods 100500
+      span.show-more-goods__last-word товаров
+  .show-more-goods__text На самом деле вкусов гораздо больше!
+  .show-more-goods__show-more-button
+    include UIKit/button/button
+    +button('показать ещё', 'button_secondary')

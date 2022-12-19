@@ -29,6 +29,10 @@
       flex-direction: column;
       row-gap: 16px;
     }
+
+    &_grey {
+      background-color: $grey_button;
+    }
   }
 
   &__title {
@@ -65,5 +69,9 @@
     @media (max-width: $mobile) {
       height: 362px;
     }
+  }
+
+  &_grey {
+    background-color: $grey_button;
   }
 }

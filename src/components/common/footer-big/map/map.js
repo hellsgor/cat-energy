@@ -31,8 +31,7 @@ function initMap() {
   resizeElements();
 
   const markerImage = {
-    url: 'assets/img/map-marker.png',
-    scaledSize: iconSize,
+    url: 'assets/images/map-marker.png',
   };
 
   const map = new google.maps.Map(mapContainer, {

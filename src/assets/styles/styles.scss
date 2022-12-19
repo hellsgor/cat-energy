@@ -5,6 +5,30 @@
 @import 'Styles/_mixins.scss';
 @import 'Styles/_indents.scss';
 
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.scroll-prohibited {
+  overflow: hidden;
+}
+
+div.modal-window-visible {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+}
+
+.page__main {
+  flex: 1 0 auto;
+}
+
 .container {
   width: 100%;
   max-width: 1440px;

@@ -1,0 +1,16 @@
+mixin picture(blockName, imagesBuildFolder, imagesNameBegin, imagesExt, alt)
+  picture(class= blockName + '__picture')(style = 'width: 100%; height: 100%;')
+
+    - let viewports = ['mobile', 'tablet', 'desktop'];
+    - let breakpoints = ['540px', '1440px', '1441px'];
+    - let prefix = 'max';
+
+      - for (let i = 0; i < viewports.length; i++)
+        - if (i === viewports.length - 1) {prefix = 'min'}
+        source(
+          media = '(' + prefix + '-width: ' + breakpoints[i] + ')'
+          srcset = imagesBuildFolder + imagesNameBegin + viewports[i] + '-x2'+ imagesExt + ' 2x, ' + imagesBuildFolder + imagesNameBegin + viewports[i] + '-x1' + imagesExt)
+      img(
+        src=imagesBuildFolder + imagesNameBegin + 'desktop' + '-x1' + imagesExt
+        alt=alt
+      )

@@ -29,9 +29,11 @@ $grey-input-border-static: #E7E7E7;
 $input-error: #FF8282;
 
 //breakpoints:
-$tablet: 1440px;
+$fullHD: 1920px;
+$tablet: 1024px;
 $mobile: 540px;
 
 //z-index:
-$z-index-header: 9900;
-$z-index-burger-menu: 10000;
+$z-index-header: 9800;
+$z-index-burger-menu: 9900;
+$z-index-modals: 10000;

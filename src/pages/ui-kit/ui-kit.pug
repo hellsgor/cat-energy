@@ -1,7 +1,9 @@
-extends Layouts/layout-without-common/layout-without-common.pug
+extends Layouts/main-layout/main-layout.pug
 
 block variables
-  - var title = 'UI-kit'
+  - let title = 'UI-kit';
+  - let withHeaderFooter = false;
+  - let pageClassName = 'ui-kit';
 
 block styles
   link(href=require('./ui-kit.scss') rel='stylesheet')
@@ -10,9 +12,11 @@ block content
   .container
     h1 UI-Kit
 
-    h2 Green button
-    include UIKit/green-button/green-button.pug
-    +green-button('подобрать программу')
+    h2 Buttons
+    .buttons
+      include UIKit/button/button
+      +button('подобрать программу')
+      +button('button_secondary', 'button_secondary')
 
     hr
 

@@ -1,0 +1,14 @@
+@import 'Layouts/main-layout/main-layout.scss';
+@import 'Partials/catalog/goods/goods.scss';
+@import 'Components/good-card/good-card.scss';
+@import 'Components/show-more-goods/show-more-goods.scss';
+@import 'Partials/catalog/additional-goods/additional-goods.scss';
+@import 'Components/modal-add-to-cart/modal-add-to-cart.scss';
+
+.catalog {
+  padding-top: 123px;
+
+  @media (max-width: $mobile) {
+    padding-top: 0;
+  }
+}

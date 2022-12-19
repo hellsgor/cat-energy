@@ -3,13 +3,14 @@
 import './main-menu/main-manu.js';
 import './burger-menu/burger-menu.js';
 
-
 import {mediaQueryTablet} from 'Utils/variables.js';
-import {currentUrl} from 'Utils/variables.js';
+import {currentUrl} from 'Utils/variables.js'
 import {adjustingHeaderScrollY} from 'Utils/variables.js';
 import {header} from 'Utils/variables.js';
 import {menuItemS} from 'Utils/variables.js';
 import {highlightActiveMenuItem} from './main-menu/main-manu.js';
+import {isMainPage} from "Utils/is-main-page";
+import {isTablet} from "Utils/is-tablet";
 
 
 let lastScroll = 0;
@@ -17,7 +18,7 @@ let currentScroll = 0;
 
 
 // прозрачный хедер на главной странице выше adjustingHeaderScrollY
-if (currentUrl === '/' && currentScroll < adjustingHeaderScrollY && !mediaQueryTablet.matches) {
+if (isMainPage() && currentScroll < adjustingHeaderScrollY && !(isTablet())) {
   headerTransparent();
   highlightActiveMenuItem();
 }
@@ -26,7 +27,7 @@ if (currentUrl === '/' && currentScroll < adjustingHeaderScrollY && !mediaQueryT
 window.addEventListener('scroll', () => {
   currentScroll = window.pageYOffset || document.body.scrollTop;
 
-  if (!mediaQueryTablet.matches) {
+  if (!(isTablet()) && isMainPage()) {
     if (currentScroll > adjustingHeaderScrollY + 180) {
       for (let menuItem of menuItemS) {
         menuItem.classList.remove('main-menu__item_white');
