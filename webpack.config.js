@@ -9,7 +9,8 @@ module.exports = {
   entry: {
     index: './src/pages/main/main.pug',
     uiKit: './src/pages/ui-kit/ui-kit.pug',
-    catalog: 'src/pages/catalog/catalog.pug',
+    catalog: './src/pages/catalog/catalog.pug',
+    programSelection: './src/pages/program-selection/program-selection.pug',
   },
   output: {
     filename: 'assets/js/[name].js',

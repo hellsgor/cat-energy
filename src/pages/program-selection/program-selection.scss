@@ -1,0 +1,13 @@
+@import 'Layouts/main-layout/main-layout.scss';
+
+.program-selection {
+  padding-top: 123px;
+
+  &__title {
+    margin: 46px 0 85px;
+  }
+
+  @media (max-width: $mobile) {
+    padding-top: 0;
+  }
+}
