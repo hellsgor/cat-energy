@@ -1,0 +1,98 @@
+.radio {
+  display: flex;
+  flex-direction: column;
+  row-gap: 13px;
+  width: 100%;
+  max-width: 570px;
+  border: 1px solid $grey-input-border-static;
+  padding: 25px 28px;
+
+  &__text {
+    font-family: 'Oswald', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    text-transform: uppercase;
+    color: $radio-button-text;
+    white-space: nowrap;
+    padding-left: 60px;
+
+    @media(max-width: $mobile) {
+      font-size: 16px;
+      line-height: 112%;
+    }
+  }
+
+  &__label {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    height: 40px;
+    &:before {
+      content: '';
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: 1px solid $input-range-thumb-border;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+
+      @media (max-width: $mobile) {
+        width: 30px;
+        height: 30px;
+      }
+    }
+    &:after {
+      content: '';
+      width: 18px;
+      height: 18px;
+      background-color: $green;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 11px;
+      opacity: 0;
+
+      @media (max-width: $mobile) {
+        width: 13.5px;
+        height: 13.5px;
+        left: 8.25px;
+      }
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+
+    @media(hover: hover) {
+      &:hover {
+        &:before {
+          border-color: $radio-hover;
+        }
+      }
+    }
+  }
+
+  &__input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    @include transition(opacity);
+
+    &:checked+label::after {
+      opacity: 1;
+      @include transition(opacity);
+    }
+  }
+
+  @media (max-width: $mobile) {
+    border: none;
+    padding: 20px 0;
+  }
+}

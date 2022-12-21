@@ -8,26 +8,41 @@ block variables
 block styles
   link(href=require('./ui-kit.scss') rel='stylesheet')
 block content
-  main.page__main
-  .container
-    h1 UI-Kit
+  main.page__main(class=pageClassName)
+    .container
+      h1 UI-Kit
 
-    h2 Buttons
-    .buttons
-      include UIKit/button/button
-      +button('подобрать программу')
-      +button('button_secondary', 'button_secondary')
+      h2 Buttons
+      .buttons
+        include UIKit/button/button
+        +button('button')
+        +button('button_secondary', 'button_secondary')
 
-    hr
+      hr
 
-    h2 Arrow button
-    include UIKit/arrow-btn/arrow-btn.pug
-    +arrow-btn('button text', '#', 'in-kit')
-    hr
+      h2 Arrow button
+      include UIKit/arrow-btn/arrow-btn.pug
+      +arrow-btn('button text', '#', 'in-kit')
+      hr
 
-    h2 Input Range
-    include UIKit/input-range/input-range
-    +range('0', '200', '100', '', 'левый текст', 'правый текст')
+      h2 Input Range
+      include UIKit/input-range/input-range
+      +range('0', '200', '100', '', 'left text', 'right text')
+
+      h2 Input
+      .inputs
+        .inputs__column
+          include UIKit/input/input.pug
+          +input('test, type-text:', 'input-name', 'placeholder', 'text', true)
+          +input('test, type-email:', 'input-name', 'placeholder', 'email', true, 'email')
+        .inputs__column
+          include UIKit/input/input.pug
+          +input('test, type-phone:', 'input-name', 'placeholder', 'phone', true, 'phone')
+          +input('test, type-number:', 'input-name', 'placeholder', 'number', true)
+
+      h2 Radio
+      include UIKit/radio/radio.pug
+      +radio('example', ['first radio', 'second radio', 'N radio'], ['first', 'second', 'N'], 0)
 
 block scripts
   script(src=require('./ui-kit.js') defer)

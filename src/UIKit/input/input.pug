@@ -1,0 +1,13 @@
+mixin input(labelText, name, placeholder, type, required='true', withIcon=false)
+  .input
+    label.input__label
+      if (withIcon !== false)
+        input.input__item.input__item_with-icon(name=name, placeholder=placeholder, type=type, maxlength=maxlength, required=required)
+        .input__icon
+          if (withIcon === 'email')
+            include Icons/email.pug
+          else if (withIcon === 'phone')
+            include Icons/phone.pug
+      else
+        input.input__item(name=name, placeholder=placeholder, type=type, maxlength=maxlength, required=required)
+      span.input__text #{labelText}

@@ -3,6 +3,17 @@
 @import 'UIKit/button/button.scss';
 @import 'UIKit/arrow-btn/arrow-btn.scss';
 @import 'UIKit/input-range/input-range.scss';
+@import 'UIKit/input/input.scss';
+@import 'UIKit/radio/radio.scss';
+
+.ui-kit {
+  flex: 0 0 auto;
+  padding-bottom: 56px;
+}
+
+h1 {
+  margin: 46px 0 85px;
+}
 
 .buttons-container {
   margin-top: 30px;
@@ -22,4 +33,16 @@ h2 {
 
 hr {
   margin-top: 16px;
+}
+
+.inputs {
+  display: flex;
+  justify-content: space-between;
+
+  &__column {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    width: 569px;
+  }
 }
