@@ -1,13 +1,41 @@
 @import 'Layouts/main-layout/main-layout.scss';
+@import 'Partials/program-selection/cat-data/cat-data.scss';
 
 .program-selection {
   padding-top: 123px;
 
+  &__block-container {
+    @media (max-width: $tablet) {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+    @media (max-width: $mobile) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
   &__title {
-    margin: 46px 0 85px;
+    margin: 46px 0 56px;
+
+    @media (max-width: $mobile) {
+      margin-bottom: 37px;
+    }
+  }
+
+  &__subtitle{
+    line-height: 150%;
+    width: 100%;
+    max-width: 330px;
+    margin-bottom: 66px;
+    @media(max-width: $mobile) {
+      line-height: 129%;
+      max-width: unset;
+      margin-bottom: 40px;
+    }
   }
 
   @media (max-width: $mobile) {
-    padding-top: 0;
+    padding-top: 66px;
   }
 }

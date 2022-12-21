@@ -1,0 +1,11 @@
+.form-cat-data
+  .form-cat-data__first-row.program-selection__block-container
+    .form-cat-data__left-column.form-cat-data__column
+      include UIKit/input/input.pug
+      +input('имя:', 'name', 'барсик', 'text', true)
+      +input('вес (кг):', 'weight', '7', 'number', true)
+      +input('возраст (лет):', 'age', '3', 'number', true)
+
+    .form-cat-data__right-column.form-cat-data__column
+      include UIKit/radio/radio.pug
+      +radio('program-target', ['похудение', 'Набор массы', 'Не знаю (Нужен ваш совет)'], ['weight-loss', 'mass-gain', 'don-t-know'], 0)

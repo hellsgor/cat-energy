@@ -1,5 +1,4 @@
 .input {
-
   $padding-left-right: 20px;
 
   &__label {
@@ -10,6 +9,10 @@
     width: 100%;
     max-width: 569px;
     position: relative;
+
+    @media (max-width: $tablet) {
+      max-width: unset;
+    }
   }
 
   &__text {

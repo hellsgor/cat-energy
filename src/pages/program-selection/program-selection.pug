@@ -11,6 +11,11 @@ block content
   main.page__main(class=pageClassName)
     .container
       h1(class=pageClassName + '__title') Подбор программы
+      .program-selection__block-container
+        h6(class=pageClassName + '__subtitle') Заполните анкету, и мы подберем программу питания для вашего кота
+
+      include Partials/program-selection/cat-data/cat-data.pug
+
 
 
 

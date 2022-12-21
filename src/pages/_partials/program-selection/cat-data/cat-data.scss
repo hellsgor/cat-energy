@@ -1,0 +1,38 @@
+@import 'UIKit/input/input.scss';
+@import 'UIKit/radio/radio.scss';
+
+.form-cat-data {
+  margin-bottom: 70px;
+
+  &__first-row {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: $tablet) {
+      flex-direction: column;
+      row-gap: 72px;
+    }
+    @media (max-width: $mobile) {
+      row-gap: 24px;
+    }
+  }
+
+  &__column {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    width: 570px;
+
+    @media(max-width: $tablet) {
+      width: 100%;
+    }
+
+    @media (max-width: $mobile) {
+      row-gap: 14px;
+    }
+  }
+
+  @media (max-width: $mobile) {
+    margin-bottom: 26px;
+  }
+}
