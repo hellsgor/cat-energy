@@ -3,6 +3,7 @@
 @import 'Partials/program-selection/owner-data/owner-data.scss';
 @import 'Partials/program-selection/comment-data/comment-data.scss';
 @import 'Partials/program-selection/additionally/additionally.scss';
+@import 'UIKit/button/button.scss';
 
 .program-selection {
   padding-top: 123px;
@@ -35,6 +36,53 @@
       line-height: 129%;
       max-width: unset;
       margin-bottom: 40px;
+    }
+  }
+
+  &__left-column {
+    @media (max-width: $tablet) {
+      max-width: 282px;
+    }
+
+    @media (max-width: $mobile) {
+      max-width: unset;
+    }
+  }
+
+  &__button-row {
+    align-items: center;
+    margin-bottom: 82px;
+
+    p {
+      @media (max-width: $mobile) {
+        text-align: center;
+      }
+    }
+
+    @media (max-width: $tablet) {
+      margin-bottom: 72px;
+      flex-direction: row;
+      column-gap: 43px;
+    }
+
+    @media (max-width: $mobile) {
+      margin-bottom: 32px;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
+  &__button {
+    .button {
+      width: 100%;
+
+      @media (max-width: $tablet) {
+        max-width: 282px;
+      }
+
+      @media (max-width: $mobile) {
+        max-width: unset;
+      }
     }
   }
 
