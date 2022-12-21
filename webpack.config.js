@@ -41,7 +41,8 @@ module.exports = {
     watchFiles: [
       './src/pages/**/*.*',
       './src/components/**/*.*',
-      './src/assets/common/*.*',
+      './src/assets/common/**/*.*',
+      './src/UIKit/**/*.*',
     ],
   },
   resolve: {
