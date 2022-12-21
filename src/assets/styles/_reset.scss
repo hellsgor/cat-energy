@@ -55,6 +55,14 @@ select {
   font: inherit;
 }
 
+/* Отключение голубой обводки у элементов формы */
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
 /* Отключение подчеркивания у ссылок*/
 a {
   color: inherit;
