@@ -47,5 +47,10 @@ block content
       +radio('example', ['first radio', 'second radio', 'N radio'], ['first', 'second', 'N'], 0)
       hr
 
+      h2 Textarea
+      include UIKit/textarea/textarea.pug
+      +textarea('some-name', 'Some placeholder', 1000)
+      hr
+
 block scripts
   script(src=require('./ui-kit.js') defer)
