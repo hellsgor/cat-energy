@@ -28,6 +28,7 @@ block content
       h2 Input Range
       include UIKit/input-range/input-range
       +range('0', '200', '100', '', 'left text', 'right text')
+      hr
 
       h2 Input
       .inputs
@@ -39,10 +40,12 @@ block content
           include UIKit/input/input.pug
           +input('test, type-phone:', 'input-name', 'placeholder', 'phone', true, 'phone')
           +input('test, type-number:', 'input-name', 'placeholder', 'number', true)
+      hr
 
       h2 Radio
       include UIKit/radio/radio.pug
       +radio('example', ['first radio', 'second radio', 'N radio'], ['first', 'second', 'N'], 0)
+      hr
 
 block scripts
   script(src=require('./ui-kit.js') defer)
