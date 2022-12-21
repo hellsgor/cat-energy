@@ -52,5 +52,10 @@ block content
       +textarea('some-name', 'Some placeholder', 1000)
       hr
 
+      h2 Checkbox
+      include UIKit/checkbox/checkbox.pug
+      +checkbox('example-checkbox', 'some text', 'some-value', 'example-checkbox')
+      hr
+
 block scripts
   script(src=require('./ui-kit.js') defer)

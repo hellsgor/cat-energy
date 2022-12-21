@@ -1,0 +1,22 @@
+@import 'UIKit/checkbox/checkbox.scss';
+
+.additionally-data {
+  margin-bottom: 60px;
+
+  &__row {
+    display: flex;
+    align-items: center;
+    column-gap: 104px;
+    row-gap: 32px;
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: $tablet) {
+    margin-bottom: 54px;
+  }
+
+  @media (max-width: $mobile) {
+    row-gap: 13px;
+    margin-bottom: 34px;
+  }
+}

@@ -1,0 +1,5 @@
+mixin checkbox(name, checkboxText, value, id)
+  .checkbox
+    input(type='checkbox', name=name, value=value, id=id)
+    label(for=id)
+      span #{checkboxText}

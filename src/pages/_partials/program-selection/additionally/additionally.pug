@@ -1,0 +1,12 @@
+.additionally-data
+
+  include Components/title-with-line/title-with-line.pug
+  +title-with-line('Дополнительно')
+
+  .container
+    .additionally-data__row.program-selection__block-container
+      include UIKit/checkbox/checkbox.pug
+      +checkbox('sweetener', 'сахарозаменитель', 'sweetener', 'sweetener')
+      +checkbox('water', 'питьевая вода', 'water', 'water')
+      +checkbox('milk', 'молоко', 'milk', 'milk')
+      +checkbox('vitamins', 'витамины', 'vitamins', 'vitamins')
