@@ -1,0 +1,14 @@
+@import 'Components/title-with-line/title-with-line.scss';
+@import 'UIKit/input/input.scss';
+
+.owner-data {
+  &__row {
+    @media (max-width: $tablet) {
+      row-gap: 20px;
+    }
+
+    @media (max-width: $mobile) {
+      row-gap: 14px;
+    }
+  }
+}

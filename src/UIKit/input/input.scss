@@ -1,5 +1,6 @@
 .input {
   $padding-left-right: 20px;
+  $padding-left-right-mobile: 16px;
 
   &__label {
     display: flex;
@@ -24,6 +25,11 @@
     text-transform: uppercase;
     color: $grey-button-text;
     white-space: nowrap;
+
+    @media (max-width: $mobile) {
+      font-size: 16px;
+      line-height: 112%;
+    }
   }
 
   &__item {
@@ -67,6 +73,9 @@
           }
         }
       }
+      @media (max-width: $mobile) {
+        padding: $padding-left-right-mobile - 1;
+      }
     }
 
     &_error {
@@ -83,6 +92,9 @@
             stroke: $input-error;
           }
         }
+      }
+      @media (max-width: $mobile) {
+        padding: $padding-left-right-mobile - 1;
       }
     }
 
@@ -101,10 +113,21 @@
           }
         }
       }
+
+      @media (max-width: $mobile) {
+        padding: $padding-left-right-mobile - 1;
+      }
     }
 
     &:required ~ .input__text::after {
       content: '*';
+    }
+
+    @media (max-width: $mobile) {
+      height: 45px;
+      font-size: 16px;
+      line-height: 112%;
+      padding: 0 $padding-left-right-mobile;
     }
   }
 
@@ -118,5 +141,9 @@
     height: 100%;
     display: flex;
     align-items: center;
+
+    @media (max-width: $mobile) {
+      padding: 0 $padding-left-right-mobile;
+    }
   }
 }

@@ -1,0 +1,13 @@
+.owner-data
+
+  include Components/title-with-line/title-with-line.pug
+  +title-with-line('Контактные данные (владельца кота)')
+
+  .container
+    .owner-data__row.page__block-row.program-selection__block-container
+      .owner-data__row__left-column.page__column
+        include UIKit/input/input.pug
+        +input('email:', 'email', '', 'email', true, 'email')
+      .owner-data__row__rigth-column.page__column
+        include UIKit/input/input.pug
+        +input('телефон:', 'phone', '', 'tel', true, 'phone')

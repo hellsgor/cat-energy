@@ -13,4 +13,30 @@
       padding-top: 66px;
     }
   }
+  &__block-row {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: $tablet) {
+      flex-direction: column;
+      row-gap: 72px;
+    }
+    @media (max-width: $mobile) {
+      row-gap: 24px;
+    }
+  }
+  &__column {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    width: 570px;
+
+    @media(max-width: $tablet) {
+      width: 100%;
+    }
+
+    @media (max-width: $mobile) {
+      row-gap: 14px;
+    }
+  }
 }

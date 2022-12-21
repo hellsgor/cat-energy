@@ -1,6 +1,7 @@
 .title-with-line {
 
   $indent: 40px;
+  $indent-mobile: 20px;
 
   margin-top: 69px;
   margin-bottom: 76px;
@@ -24,6 +25,18 @@
     margin-left: -$indent;
     background-color: $white;
     z-index: 20;
+    width: fit-content;
+
+    @media (max-width: $tablet) {
+      left: $indent;
+    }
+
+    @media (max-width: $mobile) {
+      width: 100%;
+      left: $indent-mobile;
+      padding: 0 $indent-mobile;
+      line-height: 108%;
+    }
   }
 
   @media (max-width: $tablet) {
