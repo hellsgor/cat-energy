@@ -78,6 +78,26 @@
       }
     }
 
+    &:valid {
+      border-color: $green;
+      border-width: 2px;
+      padding-left: $padding-left-right - 1;
+
+      ~ .input__icon {
+        svg {
+          path {
+            stroke: $green;
+          }
+          line {
+            stroke: $green;
+          }
+        }
+      }
+      @media (max-width: $mobile) {
+        padding: $padding-left-right-mobile - 1;
+      }
+    }
+
     &_error {
       border-color: $input-error;
       border-width: 2px;
