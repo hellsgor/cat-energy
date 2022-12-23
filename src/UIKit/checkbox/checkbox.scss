@@ -4,7 +4,7 @@
   input[type=checkbox] {
     position: absolute;
     z-index: -1;
-    opacity: 0;
+    visibility: hidden;
 
     &:checked~label:before{
       background-image: url('src/assets/icons/done.svg');
@@ -48,7 +48,9 @@
     }
 
     &:active {
-      opacity: 0.3;
+      span {
+        color: $checkbox-text-active;
+      }
     }
 
     @media (hover: hover) {
