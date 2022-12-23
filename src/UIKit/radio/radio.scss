@@ -57,7 +57,7 @@
       top: 50%;
       transform: translateY(-50%);
       left: 11px;
-      opacity: 0;
+      visibility: hidden;
 
       @media (max-width: $mobile) {
         width: 13.5px;
@@ -67,7 +67,9 @@
     }
 
     &:active {
-      opacity: 0.3;
+      .radio__text {
+        color: $radio-text-active;
+      }
     }
 
     @media(hover: hover) {
@@ -83,11 +85,9 @@
     position: absolute;
     z-index: -1;
     opacity: 0;
-    @include transition(opacity);
 
     &:checked+label::after {
-      opacity: 1;
-      @include transition(opacity);
+      visibility: visible;
     }
   }
 
@@ -101,7 +101,6 @@
   }
 
   @media (max-width: $mobile) {
-    //border: none;
     border-top: 1px solid $grey-input-border-static;
     border-bottom: 1px solid $grey-input-border-static;
   }
