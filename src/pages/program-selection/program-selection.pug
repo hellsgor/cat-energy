@@ -14,10 +14,11 @@ block content
       .program-selection__block-container
         h6(class=pageClassName + '__subtitle') Заполните анкету, и мы подберем программу питания для вашего кота
 
-    include Partials/program-selection/cat-data/cat-data.pug
-    include Partials/program-selection/owner-data/owner-data.pug
-    include Partials/program-selection/comment-data/comment-data.pug
-    include Partials/program-selection/additionally/additionally.pug
+    form(name='program-selection-form')
+      include Partials/program-selection/cat-data/cat-data.pug
+      include Partials/program-selection/owner-data/owner-data.pug
+      include Partials/program-selection/comment-data/comment-data.pug
+      include Partials/program-selection/additionally/additionally.pug
 
     .container
       div(class=pageClassName + '__button-row').page__block-row.program-selection__block-container
@@ -27,9 +28,6 @@ block content
             +button('отправить заявку')
         div(class=pageClassName + '__right-column').page__column
           p * — Обязательные поля
-
-
-
-
+    include Components/modal-window/modal-window.pug
 block scripts
   script(src=require('./program-selection.js') defer)

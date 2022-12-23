@@ -1,6 +1,6 @@
 @import 'Components/blackout/blackout.scss';
 
-.modal-add-to-cart {
+.modal-window {
   display: none;
   visibility: hidden;
   opacity: 0;
@@ -58,6 +58,12 @@
     svg {
       width: 40px;
       height: 40px;
+    }
+  }
+
+  &__title{
+    &_error {
+      color: $error;
     }
   }
 

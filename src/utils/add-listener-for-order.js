@@ -1,13 +1,11 @@
 'use strict'
-
-const modalWindow = document.querySelector('.modal-add-to-cart');
-const body = document.querySelector('body');
+import {addModalWindowContent} from 'Components/modal-window/modal-window.js';
+import {showModalWindow} from 'Components/modal-window/modal-window.js';
 
 export function addListenerForOrder(card, buttonContainerClass) {
   card.querySelector(buttonContainerClass).addEventListener('click', (evt) => {
     evt.preventDefault();
-
-    modalWindow.classList.add('modal-window-visible');
-    body.classList.add('scroll-prohibited');
+    addModalWindowContent('success', 'add order to cart');
+    showModalWindow();
   })
 }
