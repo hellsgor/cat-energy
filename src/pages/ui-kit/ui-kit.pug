@@ -39,7 +39,7 @@ block content
         .inputs__column
           include UIKit/input/input.pug
           +input('test, type-phone:', 'input-name', 'placeholder', 'phone', true, 'phone')
-          +input('test, type-number:', 'input-name', 'placeholder', 'number', true)
+          +input('test, type-number:', 'input-name', 'placeholder', 'number', true)(autocomplete='false')
       hr
 
       h2 Radio

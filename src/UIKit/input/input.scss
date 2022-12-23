@@ -10,6 +10,7 @@
     width: 100%;
     max-width: 569px;
     position: relative;
+    cursor: text;
 
     @media (max-width: $tablet) {
       max-width: unset;
@@ -165,5 +166,62 @@
     @media (max-width: $mobile) {
       padding: 0 $padding-left-right-mobile;
     }
+  }
+
+  &__numbers-buttons {
+    position: absolute;
+    z-index: 10;
+    top: 2px;
+    right: 2px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__number-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 40px;
+    height: 22px;
+    background-color: $white;
+    cursor: pointer;
+
+    svg {
+      width: 20px;
+      height: 40px;
+      path {
+        fill: $number-button-color;
+      }
+    }
+
+    @media (hover: hover) {
+      &:hover {
+        svg {
+          path {
+            fill: $number-button-hover-color;
+          }
+        }
+      }
+    }
+
+    &_up {
+    }
+    &_down {
+      margin-bottom: 4px;
+      svg {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}
+
+input[type=number] {
+  padding-right: 60px;
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    display: none;
   }
 }

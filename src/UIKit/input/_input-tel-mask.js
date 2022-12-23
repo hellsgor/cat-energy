@@ -1,10 +1,8 @@
 'use strict'
+
+import {getInputNumbersValue} from 'Utils/get-input-numbers-value.js';
 document.addEventListener("DOMContentLoaded", function () {
   let phoneInputs = document.querySelectorAll('input[data-tel-input]');
-
-  let getInputNumbersValue = function (input) {
-    return input.value.replace(/\D/g, '');
-  }
 
   let onPhonePaste = function (e) {
     let input = e.target,

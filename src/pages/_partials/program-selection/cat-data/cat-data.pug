@@ -3,9 +3,9 @@
     .form-cat-data__row.page__block-row.program-selection__block-container
       .form-cat-data__left-column.page__column
         include UIKit/input/input.pug
-        +input('имя:', 'name', 'барсик', 'text', true)('data-cat-name' minlength=1)
-        +input('вес (кг):', 'weight', '7', 'number', true)('data-cat-weight' minlength=1)
-        +input('возраст (лет):', 'age', '3', 'number', true)('data-cat-age' minlength=1)
+        +input('имя:', 'name', 'барсик', 'text', true)('data-cat-name' minlength=3)
+        +input('вес (кг):', 'weight', '7', 'number', true)('data-cat-weight')
+        +input('возраст (лет):', 'age', '3', 'number', true)('data-cat-age')
 
       .form-cat-data__right-column.page__column
         include UIKit/radio/radio.pug
