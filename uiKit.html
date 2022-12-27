@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="assets/favicon/favicon.ico" type="images/ico">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAyWyf_KfLa1_jG98nTMYOu8HtFrqp5s9o" defer></script>
+    <title>UI-kit</title>
+    <link href="assets/css/ui-kit.css" rel="stylesheet">
+  </head>
+  <body class="page__body">
+    <main class="page__main ui-kit">
+      <div class="container">
+        <h1>UI-Kit</h1>
+        <h2>Buttons</h2>
+        <div class="buttons"><a class="button" href="#"><span class="button__text">button</span></a><a
+            class="button button_secondary" href="#"><span class="button__text">button_secondary</span></a></div>
+        <hr>
+        <h2>Arrow button</h2><a class="arrow-btn" href="#">
+          <div class="arrow-btn__text">button text</div><svg width="32" height="12" viewBox="0 0 32 12" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <line y1="6" x2="26" y2="6" stroke="black" stroke-width="2"></line>
+            <path d="M32 6L25.25 11.1962L25.25 0.803848L32 6Z" fill="black"></path>
+          </svg>
+        </a>
+        <hr>
+        <h2>Input Range</h2>
+        <div class="range"><span class="range__button range__button_left">left text</span><input class="range__slider"
+            type="range" min="0" max="200" value="100" step="">
+          <div class="toggle">
+            <div class="toggle__line"></div>
+          </div><span class="range__button range__button_right">right text</span>
+        </div>
+        <hr>
+        <h2>Input</h2>
+        <div class="inputs">
+          <div class="inputs__column">
+            <div class="input"><label class="input__label"><input class="input__item" name="input-name"
+                  placeholder="placeholder" type="text" required><span class="input__text">test,
+                  type-text:</span></label></div>
+            <div class="input"><label class="input__label"><input class="input__item input__item_with-icon"
+                  name="input-name" placeholder="placeholder" type="email" required>
+                <div class="input__icon"><svg width="19" height="14" viewBox="0 0 19 14" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <line x1="0.65" y1="6" x2="0.65" y2="14" stroke="#222222" stroke-width="1.3"></line>
+                    <line x1="17.65" y1="6" x2="17.65" y2="14" stroke="#222222" stroke-width="1.3"></line>
+                    <line y1="13.35" x2="18" y2="13.35" stroke="#222222" stroke-width="1.3"></line>
+                    <line y1="1.35" x2="18" y2="1.35" stroke="#222222" stroke-width="1.3"></line>
+                    <path d="M17.35 3.1821L9.00002 9.67654L0.65 3.18209V1.65H3.5L9.00002 1.65H14H17.35V3.1821Z"
+                      stroke="#222222" stroke-width="1.3"></path>
+                  </svg></div><span class="input__text">test, type-email:</span>
+              </label></div>
+          </div>
+          <div class="inputs__column">
+            <div class="input"><label class="input__label"><input class="input__item input__item_with-icon"
+                  name="input-name" placeholder="placeholder" type="phone" required>
+                <div class="input__icon"><svg width="20" height="20" viewbox="0 0 20 20" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_2403_1625)">
+                      <path
+                        d="M17.7561 9.4H9.61816V10.6H17.7561L15.7455 12.7L16.6072 13.6L19.5752 10.5C19.6684 10.3702 19.7188 10.2123 19.7188 10.05C19.7188 9.88772 19.6684 9.72982 19.5752 9.6L16.6072 6.5L15.7455 7.4L17.7561 9.4Z"
+                        fill="black"></path>
+                      <path
+                        d="M8.37362 19.4V13.2C8.36256 13.0447 8.29849 12.8987 8.19306 12.7886C8.08763 12.6785 7.94786 12.6116 7.79917 12.6H3.5866C3.59153 12.9167 3.71415 13.2189 3.92855 13.4428C4.14295 13.6668 4.43232 13.7949 4.73548 13.8H7.12899V18.8H3.5866C3.35992 18.8149 3.13268 18.7825 2.91809 18.7048C2.70349 18.6271 2.50582 18.5057 2.33656 18.3475C2.1673 18.1893 2.02983 17.9976 1.93215 17.7834C1.83446 17.5693 1.7785 17.337 1.76753 17.1V3.10001C1.75968 2.6373 1.92564 2.18977 2.22987 1.85331C2.5341 1.51686 2.95238 1.31824 3.39512 1.30001H7.12899V6.30001H4.83122C4.52806 6.30516 4.23869 6.43324 4.02429 6.65718C3.80989 6.88112 3.68727 7.18336 3.68234 7.50001H7.89491C8.0436 7.48846 8.18337 7.42154 8.2888 7.31142C8.39423 7.2013 8.4583 7.05531 8.46936 6.90001V0.600012C8.42369 0.443872 8.33642 0.304534 8.21775 0.198285C8.09907 0.0920352 7.95389 0.0232649 7.79917 1.23734e-05H3.5866C3.20936 -0.0133408 2.8333 0.0511002 2.47993 0.189651C2.12655 0.328202 1.80279 0.538145 1.52714 0.807477C1.2515 1.07681 1.02939 1.40025 0.8735 1.7593C0.717613 2.11835 0.631012 2.50598 0.618647 2.90001V16.8C0.590902 17.1977 0.642233 17.597 0.769411 17.9729C0.89659 18.3489 1.09686 18.6932 1.35764 18.9844C1.61841 19.2756 1.93405 19.5072 2.28469 19.6648C2.63534 19.8224 3.0134 19.9024 3.39512 19.9H7.79917C7.86953 19.915 7.94222 19.9133 8.01186 19.895C8.0815 19.8767 8.1463 19.8423 8.20147 19.7942C8.25664 19.7462 8.30075 19.6859 8.33055 19.6176C8.36035 19.5494 8.37507 19.475 8.37362 19.4Z"
+                        fill="black"></path>
+                    </g>
+                    <defs>
+                      <clippath id="clip0_2403_1625">
+                        <rect width="19.1481" height="20" fill="white" transform="translate(0.618652)"></rect>
+                      </clippath>
+                    </defs>
+                  </svg></div><span class="input__text">test, type-phone:</span>
+              </label></div>
+            <div class="input"><label class="input__label"><input class="input__item" name="input-name"
+                  placeholder="placeholder" type="number" required autocomplete="false"><span class="input__text">test,
+                  type-number:</span>
+                <div class="input__numbers-buttons">
+                  <div class="input__number-button input__number-button_up"><svg width="33" height="17"
+                      viewbox="0 0 33 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M16.3976 0.902771L0.402771 15.165L2.34464 16.8965L16.3993 4.36431L30.4609 16.9028L32.4028 15.1712L16.408 0.909024L16.4063 0.910512L16.3976 0.902771Z"
+                        fill="black"></path>
+                    </svg></div>
+                  <div class="input__number-button input__number-button_down"><svg width="33" height="17"
+                      viewbox="0 0 33 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M16.3976 0.902771L0.402771 15.165L2.34464 16.8965L16.3993 4.36431L30.4609 16.9028L32.4028 15.1712L16.408 0.909024L16.4063 0.910512L16.3976 0.902771Z"
+                        fill="black"></path>
+                    </svg></div>
+                </div>
+              </label></div>
+          </div>
+        </div>
+        <hr>
+        <h2>Radio</h2>
+        <div class="radio example-radio-group radio-group"><input class="radio__input" name="example" type="radio"
+            value="first" id="example-radio-group-first" checked><label class="radio__label"
+            for="example-radio-group-first"><span class="radio__text">first radio</span></label><input
+            class="radio__input" name="example" type="radio" value="second" id="example-radio-group-second"><label
+            class="radio__label" for="example-radio-group-second"><span class="radio__text">second
+              radio</span></label><input class="radio__input" name="example" type="radio" value="N"
+            id="example-radio-group-N"><label class="radio__label" for="example-radio-group-N"><span
+              class="radio__text">N radio</span></label></div>
+        <hr>
+        <h2>Textarea</h2>
+        <div class="textarea"><textarea name="some-name" placeholder="Some placeholder" maxlength="1000"></textarea>
+        </div>
+        <hr>
+        <h2>Checkbox</h2>
+        <div class="checkbox"><input type="checkbox" name="example-checkbox" value="example-checkbox"
+            id="some text"><label for="some text"><span>some-value</span></label></div>
+        <hr>
+      </div>
+    </main>
+    <script src="assets/js/ui-kit.js" defer>
+    </script>
+  </body>
+</html>
