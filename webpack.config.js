@@ -92,6 +92,10 @@ module.exports = {
           from: path.resolve(__dirname, 'src/assets/images/goods'),
           to: path.resolve(__dirname, 'build/assets/images/goods'),
         },
+        {
+          from: path.resolve(__dirname, 'src/assets/json/server-answer.json'),
+          to: path.resolve(__dirname, 'build/assets/json'),
+        },
       ],
     }),
   ],

@@ -3,10 +3,10 @@
     .form-cat-data__row.page__block-row.program-selection__block-container
       .form-cat-data__left-column.page__column
         include UIKit/input/input.pug
-        +input('имя:', 'name', 'барсик', 'text', true)('data-cat-name' minlength=3)
-        +input('вес (кг):', 'weight', '7', 'number', true)('data-cat-weight')
-        +input('возраст (лет):', 'age', '3', 'number', true)('data-cat-age')
+        +input('имя:', 'name', 'барсик', 'text', true)('data-cat-name' minlength=3 form='program-selection-form')
+        +input('вес (кг):', 'weight', '7', 'number', true)('data-cat-weight' form='program-selection-form')
+        +input('возраст (лет):', 'age', '3', 'number', true)('data-cat-age' form='program-selection-form')
 
       .form-cat-data__right-column.page__column
         include UIKit/radio/radio.pug
-        +radio('program-target', ['похудение', 'Набор массы', 'Не знаю (Нужен ваш совет)'], ['weight-loss', 'mass-gain', 'don-t-know'], 0)
+        +radio('program-target', ['похудение', 'Набор массы', 'Не знаю (Нужен ваш совет)'], ['weight-loss', 'mass-gain', 'don-t-know'])(form='program-selection-form' required)

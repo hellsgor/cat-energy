@@ -1,4 +1,12 @@
 .radio {
+
+  $verticalPadding: 25px;
+  $horizontalPadding: 28px;
+
+  @mixin padding-with-fat-border {
+    padding: $verticalPadding - 1 $horizontalPadding - 1;
+  }
+
   display: flex;
   flex-direction: column;
   row-gap: 13px;
@@ -6,6 +14,18 @@
   max-width: 570px;
   border: 1px solid $grey-input-border-static;
   padding: 25px 28px;
+
+  &_error {
+    border-width: 2px;
+    border-color: $input-error;
+    @include padding-with-fat-border;
+  }
+
+  &_valid {
+    border-width: 2px;
+    border-color: $green;
+    @include padding-with-fat-border;
+  }
 
   &__text {
     font-family: 'Oswald', sans-serif;

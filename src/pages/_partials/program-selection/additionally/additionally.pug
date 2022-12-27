@@ -6,7 +6,7 @@
   .container
     .additionally-data__row.program-selection__block-container
       include UIKit/checkbox/checkbox.pug
-      +checkbox('sweetener', 'сахарозаменитель', 'sweetener', 'sweetener')
-      +checkbox('water', 'питьевая вода', 'water', 'water')
-      +checkbox('milk', 'молоко', 'milk', 'milk')
-      +checkbox('vitamins', 'витамины', 'vitamins', 'vitamins')
+      +checkbox('sweetener', 'sweetener', 'сахарозаменитель')(form='program-selection-form')
+      +checkbox('water', 'water', 'питьевая вода')(form='program-selection-form')
+      +checkbox('milk', 'milk', 'молоко')(form='program-selection-form')
+      +checkbox('vitamins', 'vitamins', 'витамины')(form='program-selection-form')

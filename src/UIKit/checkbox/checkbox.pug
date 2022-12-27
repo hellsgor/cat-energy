@@ -1,5 +1,5 @@
-mixin checkbox(name, checkboxText, value, id)
+mixin checkbox(name, id, checkboxText, value='true')
   .checkbox
-    input(type='checkbox', name=name, value=value, id=id)
+    input(type='checkbox', name=name, value=value, id=id)&attributes(attributes)
     label(for=id)
       span #{checkboxText}

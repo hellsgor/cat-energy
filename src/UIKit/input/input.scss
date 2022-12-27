@@ -177,6 +177,10 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    @media (max-width: $mobile) {
+      display: none;
+    }
   }
 
   &__number-button {

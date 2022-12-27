@@ -7,7 +7,7 @@
     .owner-data__row.page__block-row.program-selection__block-container
       .owner-data__left-column.page__column
         include UIKit/input/input.pug
-        +input('email:', 'email', '', 'email', true, 'email')('data-email-input' pattern='^(?!.*@.*@.*$)(?!.*@.*--.*\\..*$)(?!.*@.*-\\..*$)(?!.*@.*-$)((.*)?@.+(\\..{1,11})?)$')
+        +input('email:', 'email', '', 'email', true, 'email')(form='program-selection-form' 'data-email-input' pattern='^(?!.*@.*@.*$)(?!.*@.*--.*\\..*$)(?!.*@.*-\\..*$)(?!.*@.*-$)((.*)?@.+(\\..{1,11})?)$')
       .owner-data__row__rigth-column.page__column
         include UIKit/input/input.pug
-        +input('телефон:', 'phone', '', 'tel', true, 'phone')('data-tel-input' maxlength=18 pattern='(^(\\+[0-9]{1})?( \\([0-9]{3})?(\\) [0-9]{3})?([-]{1})?([0-9]{2})?([-]{1})?([0-9]{2})?$)|(^[0-9]{1,4}$)')
+        +input('телефон:', 'phone', '', 'tel', true, 'phone')(form='program-selection-form' 'data-tel-input' maxlength=18 pattern='(^(\\+[0-9]{1})?( \\([0-9]{3})?(\\) [0-9]{3})?([-]{1})?([0-9]{2})?([-]{1})?([0-9]{2})?$)|(^[0-9]{1,4}$)')

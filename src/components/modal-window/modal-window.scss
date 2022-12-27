@@ -65,6 +65,11 @@
     &_error {
       color: $error;
     }
+
+    @media (max-width: $mobile) {
+      width: 100%;
+      text-align: center;
+    }
   }
 
   &__text {

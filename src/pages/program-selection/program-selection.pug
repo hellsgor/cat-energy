@@ -14,7 +14,7 @@ block content
       .program-selection__block-container
         h6(class=pageClassName + '__subtitle') Заполните анкету, и мы подберем программу питания для вашего кота
 
-    form(name='program-selection-form')
+    form(name='program-selection-form' id='program-selection-form' action="#")
       include Partials/program-selection/cat-data/cat-data.pug
       include Partials/program-selection/owner-data/owner-data.pug
       include Partials/program-selection/comment-data/comment-data.pug
@@ -23,9 +23,11 @@ block content
     .container
       div(class=pageClassName + '__button-row').page__block-row.program-selection__block-container
         div(class=pageClassName + '__left-column').page__column
+          //button.button(type='submit' form='program-selection-form' id='program-selection-button')
+          //  span.button__text Отправить заявку
           div(class=pageClassName + '__button')
             include UIKit/button/button
-            +button('отправить заявку')
+            +button('отправить заявку')(form='program-selection-form' id='program-selection-button')
         div(class=pageClassName + '__right-column').page__column
           p * — Обязательные поля
     include Components/modal-window/modal-window.pug

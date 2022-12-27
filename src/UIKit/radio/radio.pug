@@ -1,10 +1,10 @@
-mixin radio(name, textArray, valuesArray, checked)
-  .radio(class=name + '-radio-group')
+mixin radio(name, textArray, valuesArray, checked='false')
+  .radio(class=name + '-radio-group radio-group')&attributes(attributes)
     - for(let i=0; i<valuesArray.length; i++)
       if (i === checked)
-        input.radio__input(name=name type='radio' value=valuesArray[i], id=name + '-radio-group-' + valuesArray[i], checked)
+        input.radio__input(name=name type='radio' value=valuesArray[i], id=name + '-radio-group-' + valuesArray[i], checked)&attributes(attributes)
       else
-        input.radio__input(name=name type='radio' value=valuesArray[i], id=name + '-radio-group-' + valuesArray[i])
+        input.radio__input(name=name type='radio' value=valuesArray[i], id=name + '-radio-group-' + valuesArray[i])&attributes(attributes)
       label.radio__label(for=name + '-radio-group-' + valuesArray[i])
         span.radio__text #{textArray[i]}
 
