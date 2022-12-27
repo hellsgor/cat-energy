@@ -1,18 +1,20 @@
 # Cat Energy (pet-project)
 
----
-
-[Клонирование репозитория](#repo-clone)
-
-[Версионность](#versions)
-
-[Работа с npm](#npmcommands)
-
-[Файловая структура](#Файловая структура)
+**GitHub Pages - https://hellsgor.github.io/cat-energy/**
 
 ---
 
-## <a name='repo-clone'></a>Клонирование репозитория
+1. [Клонирование репозитория](#repo-clone)
+2. [Версионность](#versions)
+3. [Работа с npm](#npmcommands)
+4. [Файловая структура](#Файловая структура)
+5. [Alias'ы](#alias)
+6. [Страницы](#pages)
+7. [Использованные ресурсы](#used-resources)
+
+---
+
+## <a name='repo-clone'>Клонирование репозитория</a>
 
     git@github.com:hellsgor/cat-energy.git
 
@@ -29,7 +31,7 @@
 - `npm run build` - сборка билда prod;
 - `npm run deploy` - сборка билда prod и публикация в gitHub Pages.
 
-## <a name='file-structure'></a>Файловая структура
+## <a name='file-structure'>Файловая структура</a>
 
 - src/
   - assets/
@@ -52,7 +54,7 @@
   - ui-kit/ - микро-компоненты (кнопки, чек-боксы, инпуты и пр.);
   - utils/ - части js-кода используемые в проекте вынесены в отдельную папку, например, отправка или валидация полей формы и пр.
 
-## Alias'ы
+## <a name='alias'>Alias'ы</a>
 
 - Img - './src/assets/image/';
 - Icons - './src/assets/icons/';
@@ -68,14 +70,14 @@
 - Mixins (pug) - './src/mixins/';
 - JSON - './src/assets/json'.
 
-## Страницы
+## <a name='pages'>Страницы</a>
 
 - главная страница - https://hellsgor.github.io/cat-energy/;
 - каталог продукции - https://hellsgor.github.io/cat-energy/catalog.html;
 - подбор программы - https://hellsgor.github.io/cat-energy/programSelection.html;
 - UI-kit - https://hellsgor.github.io/cat-energy/uiKit.html;
 
-## Использованные ресурсы
+## <a name='used-resources'>Использованные ресурсы</a>
 
 - сборка WebPack - https://github.com/hellsgor/myWebpackBuild. Доработана под проект;
-- макет - https://www.figma.com/file/rYCcZmhY8aIUGQXRV9yNCA/%D0%9A%D1%8D%D1%82-%D1%8D%D0%BD%D0%B5%D1%80%D0%B4%D0%B6%D0%B8-%2B?t=uHUFcRc25TQkzBUX-1. С изменениями - не все экранные формы, элементы, микроэлементы присуствуют в макете.
+- макет - https://www.figma.com/file/rYCcZmhY8aIUGQXRV9yNCA/%D0%9A%D1%8D%D1%82-%D1%8D%D0%BD%D0%B5%D1%80%D0%B4%D0%B6%D0%B8-%2B?t=uHUFcRc25TQkzBUX-1. С изменениями - не все экранные формы, элементы, микроэлементы присутствуют в макете.
