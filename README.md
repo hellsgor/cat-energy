@@ -51,6 +51,14 @@
 - Partials - './src/pages/\_partials/';
 - Utils - './src/utils/';
 
+## Страницы
+
+- главная страница - ;
+- каталог продукции - ;
+- подбор программы - ;
+- UI-kit - ;
+
 ## Использованные ресурсы
 
 - сборка WebPack - https://github.com/hellsgor/myWebpackBuild;
+- макет - https://www.figma.com/file/rYCcZmhY8aIUGQXRV9yNCA/%D0%9A%D1%8D%D1%82-%D1%8D%D0%BD%D0%B5%D1%80%D0%B4%D0%B6%D0%B8-%2B?t=uHUFcRc25TQkzBUX-1
