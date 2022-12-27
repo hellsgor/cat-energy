@@ -1,0 +1,231 @@
+.input {
+  $padding-left-right: 20px;
+  $padding-left-right-mobile: 16px;
+
+  &__label {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    column-gap: 16px;
+    width: 100%;
+    max-width: 569px;
+    position: relative;
+    cursor: text;
+
+    @media (max-width: $tablet) {
+      max-width: unset;
+    }
+  }
+
+  &__text {
+    font-family: 'Oswald', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: $grey-button-text;
+    white-space: nowrap;
+
+    @media (max-width: $mobile) {
+      font-size: 16px;
+      line-height: 112%;
+    }
+  }
+
+  &__item {
+    width: 100%;
+    height: 52px;
+    border: 1px solid $grey-input-border-static;
+    padding: 0 $padding-left-right;
+    font-family: 'Oswald', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: $grey-button-text;
+
+    &_with-icon {
+      padding-right: 56px;
+    }
+
+    &::placeholder {
+      color: $grey-light;
+    }
+
+    @media (hover: hover) {
+      &:hover {
+        border-color: $grey-input-hover-border-color;
+      }
+    }
+
+    &:focus {
+      border-color: $grey-input-active-border-color;
+      border-width: 2px;
+      padding-left: $padding-left-right - 1;
+      ~ .input__icon {
+        svg {
+          path {
+            stroke: $green;
+          }
+          line {
+            stroke: $green;
+          }
+        }
+      }
+      @media (max-width: $mobile) {
+        padding: $padding-left-right-mobile - 1;
+      }
+    }
+
+    &:valid {
+      border-color: $green;
+      border-width: 2px;
+      padding-left: $padding-left-right - 1;
+
+      ~ .input__icon {
+        svg {
+          path {
+            stroke: $green;
+          }
+          line {
+            stroke: $green;
+          }
+        }
+      }
+      @media (max-width: $mobile) {
+        padding: $padding-left-right-mobile - 1;
+      }
+    }
+
+    &_error {
+      border-color: $input-error;
+      border-width: 2px;
+      padding-left: $padding-left-right - 1;
+
+      ~ .input__icon {
+        svg {
+          path {
+            stroke: $input-error;
+          }
+          line {
+            stroke: $input-error;
+          }
+        }
+      }
+      @media (max-width: $mobile) {
+        padding: $padding-left-right-mobile - 1;
+      }
+    }
+
+    &_valid {
+      border-color: $green;
+      border-width: 2px;
+      padding-left: $padding-left-right - 1;
+
+      ~ .input__icon {
+        svg {
+          path {
+            stroke: $green;
+          }
+          line {
+            stroke: $green;
+          }
+        }
+      }
+
+      @media (max-width: $mobile) {
+        padding: $padding-left-right-mobile - 1;
+      }
+    }
+
+    &:required ~ .input__text::after {
+      content: '*';
+    }
+
+    @media (max-width: $mobile) {
+      height: 45px;
+      font-size: 16px;
+      line-height: 112%;
+      padding: 0 $padding-left-right-mobile;
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 $padding-left-right 0 0;
+    margin: 0;
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    @media (max-width: $mobile) {
+      padding: 0 $padding-left-right-mobile;
+    }
+  }
+
+  &__numbers-buttons {
+    position: absolute;
+    z-index: 10;
+    top: 2px;
+    right: 2px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @media (max-width: $mobile) {
+      display: none;
+    }
+  }
+
+  &__number-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 40px;
+    height: 22px;
+    background-color: $white;
+    cursor: pointer;
+
+    svg {
+      width: 20px;
+      height: 40px;
+      path {
+        fill: $number-button-color;
+      }
+    }
+
+    @media (hover: hover) {
+      &:hover {
+        svg {
+          path {
+            fill: $number-button-hover-color;
+          }
+        }
+      }
+    }
+
+    &_up {
+    }
+    &_down {
+      margin-bottom: 4px;
+      svg {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}
+
+input[type=number] {
+  padding-right: 60px;
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    display: none;
+  }
+}

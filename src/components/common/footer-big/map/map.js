@@ -3,6 +3,7 @@ import {mediaQueryMobile} from 'Utils/variables';
 
 let mapPosition = { lat: 59.9393, lng: 30.315 };
 let iconSize = new google.maps.Size(113, 106);
+let scale = new google.maps.Size(113, 106);
 let zoomIndex = 16;
 
 const mapContainer = document.getElementById("map");
@@ -21,6 +22,7 @@ function resizeElements() {
 
   if (mediaQueryMobile.matches) {
     iconSize = new google.maps.Size(57, 53);
+    scale = new google.maps.Size(57, 53);
     zoomIndex = 16;
   }
 }
@@ -32,6 +34,8 @@ function initMap() {
 
   const markerImage = {
     url: 'assets/images/map-marker.png',
+    size: iconSize,
+    scaledSize: scale,
   };
 
   const map = new google.maps.Map(mapContainer, {

@@ -17,3 +17,6 @@ export const burgerMenuOpenButton = document.querySelector('.header__burger-btn'
 
 // URL & Header colors
 export const currentUrl = window.location.pathname;
+
+// Modal window
+export const modalWindow = document.querySelector('.modal-window');

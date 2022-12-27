@@ -32,7 +32,8 @@ figure,
 figcaption,
 blockquote,
 dl,
-dd {
+dd,
+hr {
   margin: 0;
 }
 
@@ -55,6 +56,14 @@ select {
   font: inherit;
 }
 
+/* Отключение голубой обводки у элементов формы */
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
 /* Отключение подчеркивания у ссылок*/
 a {
   color: inherit;
@@ -67,4 +76,11 @@ button {
   background: none;
   padding: 0;
   cursor: pointer;
+}
+/* Обнуление цвета полей при автозаполнении */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active  {
+  box-shadow: 0 0 0 30px #ffffff inset !important;
 }

@@ -9,6 +9,7 @@ $grey-light: #B3B3B3;
 $background-color: #F2F2F2;
 $section-border: #E6E6E6;
 $footer-black: #111111;
+$error: #FF8282;
 
 //grey-button-colors:
 $grey-button: #F2F2F2;
@@ -26,7 +27,23 @@ $input-range-track-color: #DCDCDC;
 
 //input:
 $grey-input-border-static: #E7E7E7;
+$grey-input-hover-border-color: #CDCDCD;
+$grey-input-active-border-color: #444444;
 $input-error: #FF8282;
+
+//radio:
+$radio-button-text: #222222;
+$radio-hover: #BABABA;
+$radio-text-active: #666666;
+
+//checkbox:
+$checkbox-border: #CDCDCD;
+$checkbox-hover-border: #BABABA;
+$checkbox-text-active: #666666;
+
+// numbers buttons:
+$number-button-color: #CDCDCD;
+$number-button-hover-color: #5EAA2F;
 
 //breakpoints:
 $fullHD: 1920px;

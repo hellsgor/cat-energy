@@ -3,6 +3,19 @@
 @import 'UIKit/button/button.scss';
 @import 'UIKit/arrow-btn/arrow-btn.scss';
 @import 'UIKit/input-range/input-range.scss';
+@import 'UIKit/input/input.scss';
+@import 'UIKit/radio/radio.scss';
+@import 'UIKit/textarea/textarea.scss';
+@import 'UIKit/checkbox/checkbox.scss';
+
+.ui-kit {
+  flex: 0 0 auto;
+  padding-bottom: 56px;
+}
+
+h1 {
+  margin: 46px 0 85px;
+}
 
 .buttons-container {
   margin-top: 30px;
@@ -22,4 +35,19 @@ h2 {
 
 hr {
   margin-top: 16px;
+  background-color: $green;
+  height: 1px;
+  border: none;
+}
+
+.inputs {
+  display: flex;
+  justify-content: space-between;
+
+  &__column {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    width: 569px;
+  }
 }

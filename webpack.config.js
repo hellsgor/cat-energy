@@ -9,7 +9,8 @@ module.exports = {
   entry: {
     index: './src/pages/main/main.pug',
     uiKit: './src/pages/ui-kit/ui-kit.pug',
-    catalog: 'src/pages/catalog/catalog.pug',
+    catalog: './src/pages/catalog/catalog.pug',
+    programSelection: './src/pages/program-selection/program-selection.pug',
   },
   output: {
     filename: 'assets/js/[name].js',
@@ -40,7 +41,8 @@ module.exports = {
     watchFiles: [
       './src/pages/**/*.*',
       './src/components/**/*.*',
-      './src/assets/common/*.*',
+      './src/assets/common/**/*.*',
+      './src/UIKit/**/*.*',
     ],
   },
   resolve: {
@@ -89,6 +91,10 @@ module.exports = {
         {
           from: path.resolve(__dirname, 'src/assets/images/goods'),
           to: path.resolve(__dirname, 'build/assets/images/goods'),
+        },
+        {
+          from: path.resolve(__dirname, 'src/assets/json/server-answer.json'),
+          to: path.resolve(__dirname, 'build/assets/json'),
         },
       ],
     }),
