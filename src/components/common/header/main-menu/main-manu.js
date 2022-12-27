@@ -1,6 +1,7 @@
 import {currentUrl} from 'Utils/variables.js';
 import { mediaQueryTablet } from 'Utils/variables.js';
 import { menuItemS } from 'Utils/variables.js';
+import { isMainPage } from 'Utils/is-main-page.js';
 
 
 addWhiteMenuItems();
@@ -9,7 +10,7 @@ highlightActiveMenuItem();
 function addWhiteMenuItems() {
   if (!mediaQueryTablet.matches) {
     for (let menuItem of menuItemS) {
-      if (currentUrl === '/') {
+      if (isMainPage()) {
         menuItem.classList.add('main-menu__item_white');
       }
     }

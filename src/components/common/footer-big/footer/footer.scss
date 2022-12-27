@@ -104,6 +104,9 @@
   }
 
   &__academy-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     svg {
       path{
         fill: $grey-dark;
@@ -113,6 +116,7 @@
 
   &__copyright {
     display: flex;
+    align-items: center;
     column-gap: 22px;
 
     @media(hover: hover) {

@@ -4,6 +4,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 const PugPlugin = require('pug-plugin');
 
 const isDev = process.env.NODE_ENV === 'development';
+
 module.exports = {
   mode: 'development',
   entry: {
