@@ -27,7 +27,7 @@ export async function sendForm(form) {
 
 async function sendData(data, url) {
   try {
-    let response = await fetch('/assets/json/server-answer.json', {
+    let response = await fetch('./assets/json/server-answer.json', {
       method: 'GET',
       // headers: { 'Content-Type': 'multipart/form-data' },
       // body: data,

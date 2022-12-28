@@ -1,22 +1,37 @@
-# Cat Energy (learning project)
+# Cat Energy (pet-project)
 
-## Клонирование репозитория
+**GitHub Pages - https://hellsgor.github.io/cat-energy/**
+
+---
+
+1. [Клонирование репозитория](#repo-clone)
+2. [Версионность](#versions)
+3. [Работа с npm](#npmcommands)
+4. [Файловая структура](#file-structure)
+5. [Alias'ы](#alias)
+6. [Страницы](#pages)
+7. [Использованные ресурсы](#used-resources)
+
+---
+
+## <a name='repo-clone'>Клонирование репозитория</a>
 
     git@github.com:hellsgor/cat-energy.git
 
-## Версионность
+## <a name='versions'>Версионность</a>
 
 - node js - v.18.7.0
 - npm - 8.15.0
 
-## Работа с npm
+## <a name='npmcommands'>Работа с npm</a>
 
-- установка пакетов - `npm i`;
-- запуск dev-сервера - `npm start`;
-- сборка билда dev - `npm run dev`;
-- сборка билда prod - `npm run build`.
+- `npm i` - установка пакетов;
+- `npm start` - запуск dev-сервера;
+- `npm run dev` - сборка билда dev;
+- `npm run build` - сборка билда prod;
+- `npm run deploy` - сборка билда prod и публикация в gitHub Pages.
 
-## Файловая структура
+## <a name='file-structure'>Файловая структура</a>
 
 - src/
   - assets/
@@ -29,15 +44,17 @@
   - components/ - компоненты;
     - common/ - компоненты обязательные для всех страниц;
   - layouts/ - шаблоны страниц;
-  - libs/ - для хранения сторонних библиотек;
+  - libs/ - библиотеки;
   - pages/ - страницы;
     - _partials/ - части страниц, которые не являются компонентами ввиду отсутствия необходимости в их переиспользовании;
-    - main/ - файлы main.html;
-    - ui-kit/ - файлы uiKit.html
+    - catalog - файлы страницы "подбор программы";
+    - main/ - файлы главной страницы;
+    - program-selection - файлы страницы "подбор программы";
+    - ui-kit/ - файлы страницы uiKit;
   - ui-kit/ - микро-компоненты (кнопки, чек-боксы, инпуты и пр.);
-  - utils/ - сервисы используемые в проекте вынесены в отдельную папку, например, файл send-form.js или inputs-validation.js.
+  - utils/ - части js-кода используемые в проекте вынесены в отдельную папку, например, отправка или валидация полей формы и пр.
 
-## Alias'ы
+## <a name='alias'>Alias'ы</a>
 
 - Img - './src/assets/image/';
 - Icons - './src/assets/icons/';
@@ -50,15 +67,17 @@
 - NodeModules - './node_modules/';
 - Partials - './src/pages/\_partials/';
 - Utils - './src/utils/';
+- Mixins (pug) - './src/mixins/';
+- JSON - './src/assets/json'.
 
-## Страницы
+## <a name='pages'>Страницы</a>
 
-- главная страница - ;
-- каталог продукции - ;
-- подбор программы - ;
-- UI-kit - ;
+- главная страница - https://hellsgor.github.io/cat-energy/;
+- каталог продукции - https://hellsgor.github.io/cat-energy/catalog.html;
+- подбор программы - https://hellsgor.github.io/cat-energy/programSelection.html;
+- UI-kit - https://hellsgor.github.io/cat-energy/uiKit.html;
 
-## Использованные ресурсы
+## <a name='used-resources'>Использованные ресурсы</a>
 
-- сборка WebPack - https://github.com/hellsgor/myWebpackBuild;
-- макет - https://www.figma.com/file/rYCcZmhY8aIUGQXRV9yNCA/%D0%9A%D1%8D%D1%82-%D1%8D%D0%BD%D0%B5%D1%80%D0%B4%D0%B6%D0%B8-%2B?t=uHUFcRc25TQkzBUX-1
+- сборка WebPack - https://github.com/hellsgor/myWebpackBuild. Доработана под проект;
+- макет - https://www.figma.com/file/rYCcZmhY8aIUGQXRV9yNCA/%D0%9A%D1%8D%D1%82-%D1%8D%D0%BD%D0%B5%D1%80%D0%B4%D0%B6%D0%B8-%2B?t=uHUFcRc25TQkzBUX-1. С изменениями - не все экранные формы, элементы, микроэлементы присутствуют в макете.

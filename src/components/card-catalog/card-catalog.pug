@@ -8,7 +8,7 @@ mixin card-catalog(fileName, title, text, btnText)
         h3.card-catalog__title #{title}
       p.card-catalog__text #{text}
       include UIKit/arrow-btn/arrow-btn.pug
-      +arrow-btn(btnText, '#')
+      +arrow-btn(btnText, './catalog.html')
     .card-catalog__right-column
       .card-catalog__icon-inner
         .card-catalog__icon
