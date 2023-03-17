@@ -4,7 +4,8 @@ const minTextValueLength = 3;
 const minNumberValueLength = 1;
 let groups = [];
 const validEmail = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,8})$/;
-const validTel = /^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$/;
+const validRusTel = /^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$/;
+const validTel = /^([+]?[0-9\s\(\)]{3,25})*$/;
 
 export function formInputsValidation(inputs) {
 
@@ -55,7 +56,7 @@ function radioValidation(parent) {
 }
 
 function isDataValid(input) {
-  if (validEmail.test(input.value)  || validTel.test(input.value)) {
+  if (validEmail.test(input.value)  || validRusTel.test(input.value) || validTel.test(input.value)) {
     return 0;
   } else {
     input.classList.add('input__item_error');
